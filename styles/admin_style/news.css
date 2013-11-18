@@ -1,0 +1,329 @@
+.top_prompt {
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.error {
+	border: 1px solid red;
+	color: #D8000C;
+    background:#FFBABA;
+	padding: 10px;
+	margin: 10px 0px 20px 10px;
+}
+
+.success {
+	border: 1px solid #029400;
+	color: #4F8A10;
+    background:#DFF2BF;
+	padding: 10px;
+	margin: 10px 0px 20px 10px;
+}
+
+.news h1 {
+	font-size: 30px;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Design for news form below */
+
+.news .tabs #news_form .create td {
+	padding: 10px;
+	float: left;
+}
+
+.news .tabs #news_form .create td input[type='text'] {
+	width: 300px;
+	height: 13px;
+	padding: 5px;
+} 
+
+.news .tabs #news_form .create td label {
+	font-size: 25px;
+}
+
+/* create upload area below */
+
+.news .tabs #news_form .create  tr.upload_area {
+	display: none;
+}
+
+.news .tabs #news_form .create  tr.upload_area td textarea {
+	padding: 10px;
+}
+
+.news .tabs #news_form .create tr.upload_area .news_upload_button {
+	display: block;
+	vertical-align: bottom;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid #ABADB3;
+	background-color: #E1E1E1;
+}
+
+/* create actions below */
+
+.news .tabs #news_form .actions td {
+	padding: 10px;
+}
+
+.news .tabs #news_form .actions td input[type='submit'] {
+	padding: 10px;
+	background-color: #E1E1E1;
+	border: 1px solid #ABADB3;
+	cursor: pointer;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.news .tabs #news_form .actions td input[type='reset'] {
+	padding: 10px;
+	background-color: #E1E1E1;
+	border: 1px solid #ABADB3;
+	cursor: pointer;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+
+/* create progressbars below */
+
+.news .tabs #news_form .progressbar {
+	position: relative;
+	display: none;
+}
+
+.news .tabs #news_form .progressbar .status_num {
+	position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+/* create temporary images below */
+
+.news .tabs #news_form #temporary_images div {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	border: 10px solid #DFDFDF;
+}
+
+.news .tabs #news_form #temporary_images div img {
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+}
+
+.news .tabs #news_form #temporary_images div .delete_image {
+	top: -30px;
+	right: -20px;
+	position: absolute;
+	font-size: 50px;
+	color: red;
+	text-decoration: none;
+	background-color: #DFDFDF;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	padding: 10px;
+	display: none;
+}
+
+/* design for news_list_form below */
+
+.news .tabs div #news_list_form .list { 	
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.news .tabs div #news_list_form .list th {
+	padding: 10px;
+	border: 1px solid #D5D6D6;
+	text-align: left;
+	font-weight: bold;
+}
+
+.news .tabs div #news_list_form .list td {
+	padding: 10px;
+	border: 1px solid #D5D6D6;
+	text-align: left;
+}
+
+.news .tabs div #news_list_form input[type='submit'] {
+	padding: 5px;
+	border: none;
+	background-color: #CCCCCC;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.news .tabs div #news_list_form table td a {
+	font-weight: normal;
+}
+
+/* design for news_update_form below */
+
+.news .tabs #news_update_form .update td {
+	padding: 10px;
+	float: left;
+}
+
+.news .tabs #news_update_form .update td input[type='text'] {
+	width: 300px;
+	height: 13px;
+	padding: 5px;
+} 
+
+.news .tabs #news_update_form .update td label {
+	font-size: 25px;
+}
+
+/* update upload area below */
+
+.news .tabs #news_update_form .update  tr.upload_area {
+	display: none;
+}
+
+.news .tabs #news_update_form .update  tr.upload_area td textarea {
+	padding: 10px;
+}
+
+.news .tabs #news_update_form .update tr.upload_area .news_upload_button {
+	display: block;
+	vertical-align: bottom;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid #ABADB3;
+	background-color: #E1E1E1;
+}
+
+
+/* update actions below */
+.news .tabs #news_update_form .actions td {
+	padding: 10px;	
+}
+
+.news .tabs #news_update_form .actions td input[type='submit'] {
+	padding: 10px;
+	background-color: #E1E1E1;
+	border: 1px solid #ABADB3;
+	cursor: pointer;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.news .tabs #news_update_form .actions td input[type='reset'] {
+	padding: 10px;
+	background-color: #E1E1E1;
+	border: 1px solid #ABADB3;
+	cursor: pointer;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.news .tabs #news_update_form .actions td a.list_view {
+	display: block;
+	vertical-align: bottom;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid #ABADB3;
+	background-color: #E1E1E1;
+}
+
+/* update progressbars below */
+.news .tabs #news_update_form .progressbar {
+	position: relative;
+	display: none;
+}
+
+.news .tabs #news_update_form .progressbar .status_num {
+	position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+/* update current images below */
+
+.news .tabs #news_update_form #current_images div {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	border: 10px solid #DFDFDF;
+}
+
+.news .tabs #news_update_form #current_images div img {
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+}
+
+.news .tabs #news_update_form #current_images div .set_image_for_delete {
+	top: -30px;
+	right: -20px;
+	position: absolute;
+	font-size: 50px;
+	color: red;
+	text-decoration: none;
+	background-color: #DFDFDF;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	padding: 10px;
+	display: none;
+}
+
+.news .tabs #news_update_form #current_images div .delete_image {
+	top: -30px;
+	right: -20px;
+	position: absolute;
+	font-size: 50px;
+	color: red;
+	text-decoration: none;
+	background-color: #DFDFDF;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	padding: 10px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

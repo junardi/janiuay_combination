@@ -1,0 +1,12 @@
+#login_form img {
+	vertical-align: middle;
+	display: none;
+}
+
+#login_form .login_error {
+	color: #F95811;
+	display: none;
+}
+
+
+

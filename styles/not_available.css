@@ -1,0 +1,7 @@
+#content_area .not_available {
+	margin: 10px;
+}
+
+#content_area .not_available p {
+	text-align: center;
+}

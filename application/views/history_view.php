@@ -1,0 +1,60 @@
+	<link rel="stylesheet" href="<?php echo base_url();?>styles/history.css" type="text/css" media="screen"/>
+	
+	<div id="content_area" class="grid_12">
+		<div class="grid_9 history">
+			<h3>THE <span class="log">FOUNDING</span></h3>
+			<div id="founding">
+				<img class="right first_image" src="<?php echo base_url(); ?>images/history/first.png" alt="first paragraph image" />
+			
+				<p>By force of circumstance, Gumuk, Hutikon, Ugamot, and Pagdakton together with their followers fled their homes at Talaugis in Irong-Irong, forging their way upstream until they reached Magapa, and there began establishing a new settlement.</p>
+			
+				<img class="left second_image" src="<?php echo base_url(); ?>images/history/second.png" alt="second and third paragraph image" />
+				
+				<p>History has it that Talaugis was the landing site of the first wave of settlers who arrived in droves in their birays or vintas from Bagatnan or Borneo to escape their former rulers' wrath, and since then settled for good in this new-found home for a life of peace and prosperity.</p>
+			
+				<p>Peace reigned for many years until in the summer of 1578, reports of white men (Spaniards) crueler and fiercer than the marauding moors set to storm an invasion started to disturb the dwellers in Talaugis settlement.</p>
+			
+				<img class="right third_image" src="<?php echo base_url(); ?>images/history/third.png" alt="fourth paragraph image" />
+				<p>Fearing for their lives, safety, and property, the settlers carrying all their possessions abandoned this southern coastal home in haste, some pushing northward to take refuge in the mountains. Most of them, without known destination however, blindly followed the Jalawod River upstream, took another river called Suagui, went deeper into it until they wound up at the mouth of a still another river called Magapa. Here, they rested.</p>
+			
+				<img class="left fourth_image" src="<?php echo base_url(); ?>images/history/fourth.png" alt="fifth paragraph image" />
+				<p>While resting, the heads of the fleeing barangays met to discuss plans for last-minute strategies. Subsequently, they decided that each barangay settled in a place as far apart from each other's as possible; never to live together in one settlement, since it seemed their safety was now at hand, being that the marauders were far behind and no one outside the barangays knew where they were. Most of all, however, the idea of spreading apart would give them the chance to practice farming to the fullest. The heads also agreed to meet again at the mouth of Magapa River after each settlement could have been established to get an idea of each other's whereabouts.</p>
+				<img class="right fifth_image" src="<?php echo base_url(); ?>images/history/fifth.png" alt="sixth paragraph image" />
+				<p>So, in Magapa, Matag-ub, Danaw, Yabon, and Quiport sprouted the first settlements. From these, Janiuay grew to follow its course of governance. The rest is history.    </p>
+			
+			</div>
+			
+			<h3 class="second">BRIEF <span class="log">HISTORY</span></h3>
+			
+			<div id="brief_history">
+				<p>The first people who settled in this part of the Island of Panay were the nine barangays led by Datu Gumuk, Datu Pagdakton, Datu Ugamot and Datu Hutikon. These barangays, composed of close relatives and their followers, about eighty of them, in 1578 left their homes at Talaugis in the southern coastal part of Irong-irong to escape the ferocity of the marauding hordes of Moors and white men. They migrated northward, following upstream the Jalawod river until they came upon the mouth of a river later on named "Suwagi" from the plant called "Owag", that grew abundantly on its banks. Now following Suwagi, they pushed deeper northward until they came upon the mouth of another river, which they named "Magapa", obviously from those big lush trees that grew on its banks. Here they rested.</p>
+				<p>The leaders took council and decided to move on to the hinterlands and split the group into clusters of barangays to allow themselves to work on large tracts of land. They agreed to have the leader of each barangay with some followers return to the confluence of Suwagi and Magapa rivers on a certain time to inform the others of their settlement's location, and mainly to maintain contact.</p>
+				<p>Two big barangays led by Datu Hutikon went north, reaching a place by the Magapa River, which was later called "Kahibolo-an" because it thrived on bamboo plants called "Bolo". They moved on, reaching a creek, now known as the Matag-ub Creek, and further up the creek on a slope they finally settled and called the place, as it is now, "Matag-ub", from the dialect "tagup", meaning wet and soft. The five remaining barangays trekked further up the Suwagi River until they reached Yabon.</p>
+				<p>They were the first and only settlers of this place at that time. Nary a trace or proof had been found anywhere else to indicate that "Ati" or any other aborigines had dwelt in these parts before they did.</p>
+				<p>With the passage of time, the settlements prospered and expanded. The early settlers had long departed, and the elders took council and decided to set up a datu to rule over each major settlement called "Minoro".</p>
+				<p>Biruk, the proclaimed Datu of Ilawod, - the expanded settlement of Matagup and Kahibolo-an, - was called "Putling Datu" as he was brave, righteous, noble and kind. He had a "pangabaga" or adviser.</p>
+				<p>Known far and wide, the settlements constantly laid siege to "Mangaralyaw" or marauding pirates from far places, but they held, putting up brave resistance to send back the enemies.  All these troubles the marauders were causing subsequently obliged or forced the settlements to set up in every "minoro" an even stronger "talutog" or fortification along with a vigilant "bantayan" or watch-perch to keep an eye on whoever that might bring unexpected danger to the settlements.</p>
+				<p>More than one hundred years since the arrival of the first settlers, the settlements grew to sixteen major "minoro". Kahibolo-an belonged to Puro Ilawod under Datu Magabaga. Each Datu ruled his minoro independently, but must submit himself to kind and judicious leadership of Datu Buhawi, the venerated old Datu of Yabon, the biggest minoro and the meeting place of all the datu and elders to hold council.</p>
+				<p>Early in 1738, the Spaniards came and laid claim of dominion over the settlements, - their land and settlers. Datu Buhawi and the ruling datu of every minoro acceded to the subjugation and pledged allegiance to the Spanish crown.</p>
+				<p>In 1758, the seat of governance was transferred to Matag-up, with titular head changed from "Teniente Absolutu" to "Capitan Basal". Don Miguel Likawan was installed as the "Capitan Basal". As the priest stayed frequently in the big church in Matag-ub, Matag-ub was formally declared a "visita" or extension of the town of Dumangas.</p>
+				<p>Technically, a settlement at that time could be considered a township. "Matag-up" being a settlement, the Spanish Governor General Francisco Javier de la Torre ordered in 1764 for the establishment of its boundaries and the territorial area of its township.</p>
+				<p>In 1769, the seat of government was transferred from "Matag-ub" to "Tagbak", - a place near the confluence of the Haniway creek and the Magapa River. With the transfer, the elders decided to call "Tagbak", the town of Haniway. However, in 1770, seven months later, the seat of government was again moved to "Takas" or elevated place, and there the poblacion of Haniway remained to be located. In the later part of 1770, the place officially retained its name "Haniway", and with the strengthening of its political administration, the town was finally established as a municipality.</p>
+			</div>
+			
+			<h3 class="third">THE STORY<span class="log">BEHIND THE NAME</span></h3>
+			<div id="story_behind">
+				
+				<p>When the Spanish expeditionary force of 1738 tore through the hinterlands of Panay and overran the settlement, the young Francisco Bayot de Ocampo who would later become its governor was among them. It must have been a lucky start for de Ocampo, having for the first time laid his eyes on Aniway, the fairest in her days, and to be falling in love right there and then with this beautiful woman from Yabon, who would eventually become the object of his constant advances.</p>
+				<p>But Aniway couldn't care less. She had already given her heart to Han who would later become Datu of Punod. Her love belonged to no one but Han, and she believed nothing could come between them to take away the love they had for each other. Besides, she was betrothed to the man, and he to her, so what arrangement could be more compelling to heighten what they felt and lived for in this life than the one that promised marriage? Aniway couldn't ask for anything more.</p>
+				<p>But, something had to go wrong; for like most star-crossed lovers, Aniway and Han would write off, too, a tragic love story.</p>
+				<p>Over the issue of Christianity and subjugation which the Spaniards propagated, two most prominent chieftains, Datu Puti of Yabon and Datu Dumagtol of Ubian, stood at odds against each other. While Datu Puti accepted without question the terms the white men laid down on his shoulders, Datu Dumagtol on the contrary went around the issue, outlawed it in every step of the way. This sparked a conflict between the two chieftains, forcing both to call the betrothal off. This done, Datu Puti thought of a ruse to trick his daughter into marrying Francisco Bayot de Ocampo. So, he ordered secretly his men to set up a mock grave somewhere, some place out-of-the-way really, and then sent word around that Han was slain in combat. So hearing this, Aniway felt grief-stricken, and rushed to the supposed grave of her beloved Han where, over it for out of despair, she took her life in her own hands. </p>
+				<p>When Francisco Bayot de Ocampo became Spanish Governor in 1756, he recommended to the Principalia the transfer of the center of governance from Matag-ub to the present site of the poblacion, which, it was learned later, was the place where Aniway met her tragic death.</p>
+				<p>Aniway deserved to be loved and remembered for her loyalty, courage, and selfless devotion, - quality traits that had set her apart from the commonplace. Her story went around like fresh wind, given with some touch of affection in the telling. In time, her name became a byword and associated with the place, so that eventually the place was named after her, and later on, Janiuay.</p>
+				<p><span class="highlight">WRITER'S NOTE:</span> The past being too distant now, talking about how a place got started with a name like any would not probably amount to anything. Everything would boil down to mere speculations for lack of hard facts and real evidence to explain or justify it, especially if the name sounds like a corruption of as many a pair of other names or words as possible. For instance, the name Janiuay seems to have been taken from the names, "Han" (Datu of Punod), and "Oway" (Rattan), or from "Hani" (whisper) and "Oway", which when combined crudely mean "whisper in the rattan thicket," or from the combination of the English words (???) "Honey" and "Why", which, if not absurd, is downright silly or inane, since as far as the natives are concerned, these words, being what they are, are non-existent to them. Consequently, when no historical basis exists, no source is available for verification, and the speculation goes farfetched. Therefore, the closest we can ever get around to giving it bearing or logical basis is by establishing credible characters and historical setting to the story, as in the case of Han and Aniway.</p>
+			</div>
+			
+		</div>
+		<div class="grid_3 omega login_area">
+			<?php $this->load->view('tools/login_area'); ?>
+		</div>
+	</div> <!--end content_area-->

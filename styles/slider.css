@@ -1,0 +1,99 @@
+#slider {
+    width: 620px;
+    margin: 25px 0px 0px 30px;
+    position: relative;
+	border: 10px solid #ccc;
+	padding: 0px;
+}
+
+#slider .scroll {
+	overflow: hidden;
+	width: 620px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#slider .scrollContainer {
+	position: relative;
+}
+
+#slider .scrollContainer div.panel {
+    padding: 10px;
+    width: 250px;
+	height: auto;
+}
+
+#slider #left-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12px;
+	bottom: 0;
+	background: url(../images/leftshadow.png) repeat-y;
+}
+
+#slider #right-shadow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 12px;
+	bottom: 0;
+	background: url(../images/rightshadow.png) repeat-y;
+}
+
+#slider .inside {
+	padding: 10px;
+	border: 1px solid #999;
+}
+
+#slider .inside img {
+	display: block;
+	border: 1px solid #666;
+	margin: 0 0 10px 0;
+	width: 226px;
+	cursor: pointer;
+}
+
+#slider .inside h2 {
+	font-weight: normal;
+	color: #111;
+	font-size: 16px;
+	margin: 0 0 8px 0;
+}
+
+#slider .inside p {
+	font-size: 11px;
+	color: #ccc;
+}
+
+#slider a {
+	color: #999;
+	text-decoration: none;
+	border-bottom: 1px dotted #ccc;
+}
+
+#slider a:hover {
+	border-bottom: 1px solid #999;
+}
+
+#slider .scrollButtons {
+    position: absolute;
+    top: 127px;
+    cursor: pointer;
+}
+
+#slider .scrollButtons.left {
+    left: -45px;
+	/*top: 82px;*/
+	top: 0px;
+}
+
+#slider .scrollButtons.right {
+    right: -45px;
+	/*top: 165px;*/
+	top: 0px;
+}
+
+#slider .hide {
+    display: none;
+}

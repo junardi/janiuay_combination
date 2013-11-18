@@ -1,0 +1,46 @@
+#content_area .local_government_unit {
+	margin: 10px;
+}
+
+#content_area .local_government_unit h3 {
+	color: #F95811;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+#content_area .local_government_unit h3 span.log {
+	color: #5C5C5C;
+}
+
+#content_area .local_government_unit .accordion {
+	margin-top: 20px;
+	width: 700px;
+}
+
+#content_area .local_government_unit .accordion h3 {
+	color: #5C5C5C;
+	font-weight: normal;
+	
+	border: 1px solid #ABADB3;
+	border-radius: 4px;
+	background-color: #FEEEBD;
+}
+
+#content_area .local_government_unit .accordion div {
+	border: 1px solid #ABADB3;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#content_area .local_government_unit .accordion div p{
+	
+	margin-top: 15px;
+	line-height: 2em;
+}
+
+#content_area .local_government_unit .accordion div p:last-child {
+	margin-bottom: 15px;
+}
+

@@ -1,0 +1,71 @@
+.rural_health {
+	margin: 10px;
+}
+
+.rural_health h3 {
+	color: #F95811;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.rural_health h3 span.log {
+	color: #5C5C5C;
+}
+
+.rural_health .accordion {
+	margin-top: 20px;
+	width: 700px;
+	
+}
+
+.rural_health .accordion h3 {
+	color: #5C5C5C;
+	font-weight: normal;
+	border: 1px solid #ABADB3;
+	border-radius: 4px;
+	background-color: #FEEEBD;
+}
+
+
+.rural_health .accordion div {
+	border: 1px solid #ABADB3;
+	border-radius: 4px;
+}
+
+.rural_health .accordion div a {
+	margin-left: 5px;
+}
+
+.rural_health .accordion div p{
+	margin-top: 15px;
+	line-height: 2em;
+}
+
+.rural_health .accordion div p:last-child {
+	margin-bottom: 15px;
+}
+
+.rural_health .accordion div ol li {
+	margin-top: 10px;
+	line-height: 2em;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

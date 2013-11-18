@@ -1,0 +1,99 @@
+#content_area .barangays {
+	margin: 10px;
+}
+
+#content_area .barangays h3 {
+	color: #F95811;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#content_area .barangays .list h3 {
+	margin-left: 5px;
+}
+
+#content_area .barangays h3 span.log {
+	color: #5C5C5C;
+}
+
+#content_area .barangays .list ul {
+	list-style: none;
+	margin-top: 10px;
+	margin-left: 7px;
+}
+
+#content_area .barangays .list ul li {
+	margin-top: 10px;
+	width: 100%;
+}
+
+
+#content_area .barangays .list ul li a {
+	color: #5c5c5c;
+
+	margin-right: 5px;
+}
+
+#content_area .barangays .list ul li a.active {
+	color: #F95811;
+}
+
+#content_area .barangays .list ul li a.barangay_link:hover {
+	color: #F95811;
+}
+
+.barangays .barangay_content h3.heading {
+	text-align: center;
+}
+
+.barangays .barangay_content p.date_range {
+	text-align: center;
+}
+
+.barangays .barangay_content .is_barangay_content {
+
+	display: none;
+}
+
+.barangays .barangay_content #accordion {
+	margin-top: 10px;
+}
+
+.barangays .barangay_content #accordion h3 {
+	color: #444444;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.barangays .barangay_content #accordion table {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.barangays .barangay_content #accordion table td {
+	padding-top: 5px;
+	padding-right: 15px;
+}
+
+.barangays .barangay_content #accordion p {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.barangays .barangay_content #accordion ol {
+	margin-bottom: 15px;
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+#content_area .social_welfare_and_development {
+	margin: 10px;
+}
+
+#content_area .social_welfare_and_development h3 {
+	color: #F95811;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+#content_area .social_welfare_and_development h3 span.log {
+	color: #5C5C5C;
+}
+
+#content_area .social_welfare_and_development .accordion {
+	margin-top: 20px;
+	width: 700px;
+	
+}
+
+#content_area .social_welfare_and_development .accordion h3 {
+	color: #5C5C5C;
+	font-weight: normal;
+	border: 1px solid #ABADB3;
+	border-radius: 4px;
+	background-color: #FEEEBD;
+}
+
+
+#content_area .social_welfare_and_development .accordion div {
+	border: 1px solid #ABADB3;
+	border-radius: 4px;
+}
+
+#content_area .social_welfare_and_development .accordion div a {
+	margin-left: 5px;
+}
+
+#content_area .social_welfare_and_development .accordion div p{
+	margin-top: 15px;
+	line-height: 2em;
+}
+
+#content_area .social_welfare_and_development .accordion div p:last-child {
+	margin-bottom: 15px;
+}
+
+#content_area .social_welfare_and_development .accordion div ol li{
+	margin-top: 10px;
+	line-height: 2em;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+#content_area .read_article {
+	margin: 10px;
+}
+
+#content_area .read_article h3 {
+	
+	font-weight: bold;
+	font-size: 18px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+#content_area .read_article .content {
+	margin-top: 10px;
+	padding: 10px;
+	border-box: box-sizing;
+	-moz-border-box: box-sizing;
+	-webkit-border-box: box sizing;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+/* 
+	LEVEL ONE
+*/
+
+ul.dropdown { 
+	position: relative;
+}
+
+ul.dropdown li { 
+	float: left; 
+	zoom: 1; 
+}
+
+ul.dropdown li:hover { 
+	position: relative; 
+}
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul { 
+	background: linear-gradient(#001C4E, #002D68);
+	background: -webkit-linear-gradient(#001C4E, #002D68);
+	background: -moz-linear-gradient(#001C4E, #002D68);
+	background: -o-linear-gradient(#001C4E, #002D68);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#001C4E', EndColorStr='#002D68');
+	width: 230px; 
+	visibility: hidden;
+	position: absolute; 
+	top: 100%; 
+	left: 0; 
+	z-index: 30;
+
+}
+
+ul.dropdown ul li { 
+	font-weight: normal; 
+	color: #000;
+	float: none; 
+}
+
+ul.dropdown ul li a {
+	padding: 10px;
+	
+}
+
+/* IE 6 & 7 Needs Inline Block */
+
+ul.dropdown ul li a	{ 
+	border-right: none; 
+	width: 100%; 
+	display: inline-block; 
+} 
+
+/* 
+	LEVEL THREE
+*/
+
+ul.dropdown ul ul 	{ 
+	left: 90%; 
+	top: 0; 
+}
+
+ul.dropdown li:hover > ul { 
+	visibility: visible; 
+}
+
+
+
+
+

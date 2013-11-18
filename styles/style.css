@@ -1,0 +1,585 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #FFF;
+	/*color: #5c5c5c;*/
+	color: #000;
+	line-height: 1.5em;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+a {
+	color: #FFF;
+}
+
+img {
+	border: none;
+}
+
+p {
+	font-size: 90%;
+}
+
+.first {
+	color: #FFF;
+}
+
+.second {
+	color: #CCCCC9;
+}
+
+.active {
+	color: #FFF;
+}
+
+input[type='text'], input[type='password'], textarea {
+	color: #5c5c5c;
+}
+
+input:focus, textarea:focus { 
+	outline: none;
+}
+
+abbr[title], acronym[title] {
+    border-bottom-width: 0;
+}
+
+.accordion div {
+	height: 400px;
+}
+
+/* below is for the navigation */
+
+#navigation {
+	background: linear-gradient(#002D68, #001C4E);
+	background: -webkit-linear-gradient(#002D68, #001C4E);
+	background: -moz-linear-gradient(#002D68, #001C4E);
+	background: -o-linear-gradient(#002D68, #001C4E);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#002D68', EndColorStr='#001C4E');
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	height: 66px;
+	
+	border-bottom: 3px solid #FFCD2C;
+}
+
+#navigation ul {
+	list-style: none;
+	padding: none;
+}
+
+#navigation #left_nav #first_nav {
+	
+}
+
+#navigation #left_nav #second_nav {
+	display: none;
+}
+
+#navigation ul li {
+	display: inline;
+}
+
+#navigation ul li a {
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#navigation #left_nav {
+	padding-left: 20px;
+}
+
+#navigation #left_nav ul li .main{
+	float: left;
+	padding: 20px 10px 20px 10px;
+	border-right: 1px solid #001C4E;
+	border-left: 1px solid #002D68;
+}
+
+#navigation #left_nav ul li .first_main {
+	border-left: none;
+}
+
+#navigation #left_nav ul li .last_main {
+	border-right: none;
+}
+
+#navigation #left_nav ul li ul li a {
+	font-size: 12px;
+}
+
+#navigation #right_nav ul {
+	float: right;
+	margin-right: 20px;
+}
+
+#navigation #right_nav ul li {
+	float: right;
+	padding: 20px 20px 20px 20px;
+	border-right: 1px solid #001C4E;
+	border-left: 1px solid #002D68;
+}
+
+#navigation #right_nav ul li:last-child {
+	border-left: none;
+}
+
+#navigation #right_nav ul li:first-child {
+	border-right: none;
+}
+
+
+/* Branding below */
+
+#branding {	
+	padding: 15px 0px;
+	position: relative;
+}
+
+#branding #prosperity_image {
+	width: 480px;
+	height: 169px;
+	position: absolute;
+	top: 0px;
+	left: 350px;
+}
+
+#branding #head_title div{	
+	margin-left: 30px;
+}
+
+#branding #head_title div img {
+	width: 89px;
+	height: 85px;
+}
+
+#branding #head_title .tag_right {
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+#branding #head_title h2 {
+	font-size: 40px;
+	font-weight: normal;
+}
+
+#branding #head_title p {
+	font-size: 15px;
+	margin-top: 5px;
+	color: #919191;
+}
+
+#branding #search_area form {
+	float: right;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+#branding #search_area form #search_something {
+	border: 1px solid #ABADB3;
+	height: 15px;
+	padding: 5px;
+	width: 150px;
+}
+
+#branding #search_area form #search_something:focus {
+	border: 1px solid #919191;
+}
+
+#branding #search_area form a img {
+	vertical-align: bottom;
+}
+
+/* Breadcrumbs below */
+
+#breadcrumbs p {
+	font-size: 15px;
+	padding: 5px 0px;
+	text-align: center;
+	background-color: #E2E5E8;
+	border-bottom: #ABADB3;
+	position: relative;
+	z-index: 20;
+}
+
+#breadcrumbs a {
+	color: #F95811;
+}
+
+/*Featured Below*/
+
+#featured {
+	background-color: #F6F6F6;
+	min-height: 251px;
+	position: relative;
+}
+
+#featured .featured_image {
+	position: relative;
+	z-index: 0;
+	
+}
+
+#featured .left_arrow {
+	position: absolute;
+	top: 102px;
+	left: 15px;
+	z-index: 4;
+	cursor: pointer;
+	display: none;
+}
+
+#featured .right_arrow {
+	position: absolute ;
+	top: 102px;
+	left: 683px;
+	z-index: 4;
+	cursor: pointer;
+	display: none;
+}
+
+#featured .featured_image div {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#featured .featured_image div img {
+	cursor: pointer;
+}
+
+
+#featured .featured_image div.current {
+	z-index: 2;
+}
+
+#featured .featured_image div.previous {
+	z-index: 1;
+}
+
+#featured .login_area {
+	
+}
+
+#featured .login_area  h3{
+	color: #F95811;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 10px;
+} 
+
+#featured .login_area h3 span.log {
+	color: #5C5C5C;
+} 
+
+#featured .login_area  p {
+	margin-top: 15px;
+}
+
+#featured .login_area input[type='text'] {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: auto;
+	height: 20px;
+}
+
+#featured .login_area input[type='password'] {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: auto;
+	height: 20px;
+}
+
+#featured .login_area input[type='submit'] {
+	margin-top: 20px;
+	padding: 10px 10px;
+	background: linear-gradient(#FECB2C, #F99016);
+	background: -webkit-linear-gradient(#FECB2C, #F99016);
+	background: -moz-linear-gradient(#FECB2C, #F99016);
+	background: -o-linear-gradient(#FECB2C, #F99016);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FECB2C', EndColorStr='#F99016');
+	color: #FFF;
+	cursor: pointer;
+	border-right: 2px solid #9C9C9C;
+	border-bottom: 2px solid #9C9C9C;
+}
+
+.login_area a {
+	color: #000; 
+}
+
+
+/* write_ups below */
+
+#write_ups {
+	padding: 30px 0px 0px 0px;
+}
+
+#write_ups  .main_write_ups h1{
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+#write_ups  .main_write_ups #intro {
+	height: 250px;
+	overflow: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+#write_ups  .main_write_ups #intro h2.top {
+	margin: 25px 20px 0px 20px;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+#write_ups  .main_write_ups #intro p.top {
+	margin: 10px 20px 20px 20px;
+	text-indent: 30px;
+}
+
+
+#write_ups  .main_write_ups  .topics {
+	background-color: #F6F6F6;
+	border: 1px solid #E8E8E8;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+
+#write_ups  .main_write_ups .topics h2 {
+	background: linear-gradient(#002D68, #001C4E);
+	background: -webkit-linear-gradient(#002D68, #001C4E);
+	background: -moz-linear-gradient(#002D68, #001C4E);
+	background: -o-linear-gradient(#002D68, #001C4E);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#002D68', EndColorStr='#001C4E');
+	font-size: 25px;
+	padding: 25px 0px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 2px solid #E8E8E8;
+	padding-left: 20px;
+}
+
+#write_ups  .main_write_ups .topics div {
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+#write_ups  .main_write_ups .topics div:last-child {
+	border-bottom: none;
+}
+
+
+#write_ups  .main_write_ups .topics div h4 {
+	font-weight: bold;
+	margin: 20px 20px 0px 20px;
+	font-size: 17px;
+}
+
+#write_ups  .main_write_ups .topics div p.date_ui {
+	margin-top: 0px;
+}
+
+#write_ups  .main_write_ups .topics div p {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#write_ups  .main_write_ups .topics div img {
+	width: 120px;
+	height: 87px;
+	display: block;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#write_ups  .main_write_ups .topics div a {
+	color: #F85811;
+}
+
+
+/* below is for the sidebar_staffs */
+
+#write_ups .sidebar_staffs #barangay_staff ul {
+	list-style: none;
+	margin-top: 20px;
+}
+
+#write_ups .sidebar_staffs #barangay_staff  ul  li {
+	margin-top: 10px;
+}
+
+#write_ups .sidebar_staffs #barangay_staff  ul  li a {
+	margin-left: 5px;
+	color: #5c5c5c;
+}
+
+#write_ups .sidebar_staffs #barangay_staff  button {
+	margin-top: 20px;
+	padding: 5px 10px;
+	color: #FFF;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: linear-gradient(#002D68, #001C4E);
+	background: -webkit-linear-gradient(#002D68, #001C4E);
+	background: -moz-linear-gradient(#002D68, #001C4E);
+	background: -o-linear-gradient(#002D68, #001C4E);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#002D68', EndColorStr='#001C4E');
+}
+
+#write_ups .sidebar_staffs #hymn_staff {
+	margin-top: 75px;
+	background-color: #F6F6F6;
+	border-box: box-sizing;
+	-webkit-border-box: box-sizing;
+	-moz-border-box: box-sizing;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#write_ups .sidebar_staffs #hymn_staff h1 {
+	color: #5C5C5C;
+	text-align: center;
+	font-weight: bold;
+}
+
+#write_ups .sidebar_staffs #hymn_staff #hymn {
+	width: 100%;
+	margin-top: 10px;
+	
+}
+
+#write_ups .sidebar_staffs #hymn_lyrics_staff {
+	border-box: box-sizing;
+	-webkit-border-box: box-sizing;
+	-moz-border-box: box-sizing;
+	padding: 10px;
+	margin-top: 20px;
+	height: 170px;
+	overflow: auto;
+}
+
+#write_ups .sidebar_staffs #hymn_lyrics_staff p {
+	margin-top: 15px;
+}
+
+
+/* below is the footer */
+
+#footer {
+	padding: 20px 0px;
+	text-align: center;
+	
+} 
+
+#footer a {
+	color: #F85811;
+}
+
+
+/* content login below*/
+
+#content_area  {
+	/*background-color: #F6F6F6;*/
+	background-color: #EDEFF0;
+	position: relative;
+	z-index: 20;
+	
+}
+
+#content_area .login_area  h3{
+	color: #F95811;
+	
+	font-size: 18px;
+	margin-top: 10px;
+} 
+
+#content_area .login_area h3 span.log {
+	color: #5C5C5C;
+} 
+
+#content_area .login_area  p {
+	margin-top: 15px;
+}
+
+#content_area .login_area input[type='text'] {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: auto;
+	height: 20px;
+}
+
+#content_area .login_area input[type='password'] {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: auto;
+	height: 20px;
+}
+
+#content_area .login_area input[type='submit'] {
+	margin-top: 20px;
+	padding: 10px 10px;
+	background: linear-gradient(#FECB2C, #F99016);
+	background: -webkit-linear-gradient(#FECB2C, #F99016);
+	background: -moz-linear-gradient(#FECB2C, #F99016);
+	background: -o-linear-gradient(#FECB2C, #F99016);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FECB2C', EndColorStr='#F99016');
+	color: #FFF;
+	cursor: pointer;
+	border-right: 2px solid #9C9C9C;
+	border-bottom: 2px solid #9C9C9C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #FFF;
+	color: #5c5c5c;
+	line-height: 1.5em;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+a {
+	color: #CCCCC9;
+}
+
+img {
+	border: none;
+}
+
+p {
+	font-size: 90%;
+}
+
+
+input:focus, textarea:focus { 
+	outline: none;
+}
+
+abbr[title], acronym[title] {
+    border-bottom-width: 0;
+}
+
+#header {	
+	padding: 15px 0px 0px 0px;
+	border-bottom: 1px solid #ABADB3;	
+}
+
+#header #head_title div{	
+	margin-left: 30px;
+}
+
+#header #head_title div img {
+	width: 89px;
+	height: 85px;
+	float: left;
+}
+
+#header #head_title .tag_right {
+	float: right;
+	margin-top: -75px;
+	margin-right: 16px;
+}
+
+#header #head_title h2 {
+	font-size: 40px;
+	color: #444444;
+	font-weight: normal;
+}
+
+#header #head_title p {
+	font-size: 15px;
+	margin-top: 5px;
+	color: #919191;
+}
+
+#header #nav_area {
+	position: relative;
+}
+
+#header #nav_area  .main_nav {
+	list-style: none;
+	margin-top: 40px;
+	margin-right: 10px;
+}
+
+#header #nav_area  .main_nav li {
+	float: right;
+	margin-right: 20px;
+}
+
+#header #nav_area .main_nav li a {
+	color: #333333;
+	text-decoration: none;
+	padding: 10px;
+	background-color: #F7F7F7;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+#header #nav_area .main_nav li a img {
+	vertical-align: middle;
+}
+
+/* nav area dropdowns below */
+
+#nav_area .first_drop {
+	position: absolute;
+	top: 70px;
+	right: 10px;
+	display: none;
+}
+
+#nav_area .first_drop .arrow {
+	text-align: right;
+}
+
+#nav_area .first_drop .arrow img {
+	vertical-align: bottom;
+	margin-right: 20px;
+}
+
+#nav_area .first_drop ul {
+	margin-top: -12px;
+	list-style: none;
+	background-color: #FFF;
+	border: 1px solid #D5D6D6;
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+#nav_area .first_drop ul li a {
+	color: #444;
+	text-decoration: none;
+}
+
+/* below is the contents */
+
+
+
+/* below is the footer */
+
+#footer {
+	margin-top: 10px;
+	text-align: center;
+} 
+
+#footer a {
+	color: #F85811;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
