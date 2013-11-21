@@ -38,8 +38,7 @@
 					Get a Registration Form.
 					<ol>
 						<li>Fill up the Registration Form.</li>
-						<img src="<?php echo base_url(); ?>images/srs_form_a.png" alt="registration form" />
-						<img src="<?php echo base_url(); ?>images/srs_form_a.png" alt="registration form" />
+						<img src="<?php echo base_url(); ?>images/srs.png" alt="registration form" />
 					</ol>
 				</li>
 				<li>Submit the completed form to your PESO Coordinator or PESO Manager.</li>

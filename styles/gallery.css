@@ -59,11 +59,10 @@
 }
 
 #gallery_popup #wrap_image {
-	position: relative;
+	position: absolute;
 	width: 612px;
 	height: 440px;
-	margin: 20px auto 0px auto;
-	
+	/*margin: 20px auto 0px auto;*/
 }
 
 #gallery_popup #wrap_image img.close {

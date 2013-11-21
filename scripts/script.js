@@ -444,6 +444,21 @@ var imageGalleryModule = (function() {
 	$nav_left = $("#wrap_image .nav_left");
 	$nav_right = $("#wrap_image .nav_right");
 	
+	// below is for centering the popup
+	var $wrap_image = $("#wrap_image");
+	var windowWidth = document.documentElement.clientWidth;
+	var windowHeight = document.documentElement.clientHeight;
+	
+	var wrap_image_width = $wrap_image.width();
+	var wrap_image_height = $wrap_image.height();
+	
+	var center_popup = function() {
+		$wrap_image.css({
+			"top": windowHeight/2-wrap_image_height/2,
+			"left": windowWidth/2-wrap_image_width/2
+		});
+	};
+	
 	var image_hover = function() {
 		$image.mouseenter('slow', function(){
 			$(this).css({
@@ -469,7 +484,29 @@ var imageGalleryModule = (function() {
 			$gallery_popup.fadeIn('slow', function(){
 				$(this).children('#wrap_image').children('.showed').attr('src', to_show_image);
 			}).css('height', $(document).height());
-	
+			
+			// for arrows below on click if there is a previous or next image
+			
+			var previous_image = $(".current").prev().children().attr('src');
+			var previous_section = $(".current").parent().prev().html();
+			
+			if(previous_image === undefined && previous_section === undefined) {
+				$nav_left.fadeOut();
+			} else {
+				$nav_left.fadeIn();
+			}
+			
+			var next_image = $(".current").next().children().attr('src');
+			var next_section = $(".current").parent().next().html();
+			
+			if(next_image === undefined && next_section === undefined) {
+				$nav_right.fadeOut();
+			} else {
+				$nav_right.fadeIn();
+			}
+			
+			// center the popup image in any screen types of monitor
+			
 		});
 	};
 	
@@ -485,10 +522,51 @@ var imageGalleryModule = (function() {
 	var image_navigate = function() {
 		
 		$nav_left.click(function() {
-			console.log("left click");
+		
+			var previous_image = $(".current").prev().children().attr('src');
+			
+			var previous_section = $(".current").parent().prev().html();
+			
+			var previous_section_image = $(".current").parent().prev().children('td:last').children().attr('src');
+			
+			if(previous_image !== undefined) {
+				$(".current").removeClass('current').prev().addClass('current');
+				
+				$("#wrap_image .showed").fadeOut('slow', function(){
+					$(this).attr('src', previous_image);
+					$("#wrap_image .showed").fadeIn('slow');
+				});
+			} 
+			
+			if(previous_image === undefined && previous_section !== undefined) {
+				
+				$(".current").parent().prev().children('td:last').addClass('current');
+				
+				$("#wrap_image .showed").fadeOut('slow', function(){
+					$(this).attr('src', previous_section_image);
+					$("#wrap_image .showed").fadeIn('slow');
+				});
+			}
+			
+			// for arrows 
+			
+			if(previous_image === undefined &&  previous_section === undefined) {
+				$(this).fadeOut();
+			}
+			
+			var next_image = $(".current").next().children().attr('src');
+			var next_section = $(".current").parent().next().html();
+			
+			if(next_image === undefined && next_section === undefined) {
+				$nav_right.fadeOut();
+			} else {
+				$nav_right.fadeIn();
+			}
+			
 		});
 		
 		$nav_right.click(function(){
+			
 			var next_image = $(".current").next().children().attr('src');
 			
 			var next_section = $(".current").parent().next().html();
@@ -496,12 +574,12 @@ var imageGalleryModule = (function() {
 			var next_section_image = $(".current").parent().next().children('td:first').children().attr('src');
 			
 			if(next_image !== undefined) {
+				
 				$(".current").removeClass('current').next().addClass('current');
 				
 				$("#wrap_image .showed").fadeOut('slow', function(){
-					$("#wrap_image .showed").fadeIn('slow', function(){
-						$(this).attr('src', next_image);
-					});
+					$(this).attr('src', next_image);
+					$("#wrap_image .showed").fadeIn('slow');
 				});
 			} 
 			
@@ -509,17 +587,32 @@ var imageGalleryModule = (function() {
 				$(".current").parent().next().children('td:first').addClass('current');
 				
 				$("#wrap_image .showed").fadeOut('slow', function(){
-					$("#wrap_image .showed").fadeIn('slow', function(){
-						$(this).attr('src', next_section_image);
-					});
+					$(this).attr('src', next_section_image);
+					$("#wrap_image .showed").fadeIn('slow');
 				});
 			}
-		
+			
+			// for arrows
+			
+			if(next_image === undefined && next_section === undefined) {
+				$(this).fadeOut();
+			}
+			
+			var previous_image = $(".current").prev().children().attr('src');
+			var previous_section = $(".current").parent().prev().html();
+			
+			if(previous_image === undefined && previous_section === undefined) {
+				$nav_left.fadeOut();
+			} else {
+				$nav_left.fadeIn();
+			}
+	
 		});
 	
 	};
 	
 	return {
+		center_popup: center_popup,
 		image_hover: image_hover,
 		image_click: image_click,
 		close_image_click: close_image_click,
@@ -530,6 +623,7 @@ var imageGalleryModule = (function() {
 
 // Execute Gallery Module Below
 
+imageGalleryModule.center_popup();
 imageGalleryModule.image_hover();
 imageGalleryModule.image_click();
 imageGalleryModule.close_image_click();

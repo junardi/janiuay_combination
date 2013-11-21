@@ -234,7 +234,7 @@ abbr[title], acronym[title] {
 /*Featured Below*/
 
 #featured {
-	background-color: #F6F6F6;
+	background-color: #FFF5C9;
 	min-height: 251px;
 	position: relative;
 }
@@ -333,7 +333,6 @@ abbr[title], acronym[title] {
 	color: #000; 
 }
 
-
 /* write_ups below */
 
 #write_ups {
@@ -365,7 +364,7 @@ abbr[title], acronym[title] {
 
 
 #write_ups  .main_write_ups  .topics {
-	background-color: #F6F6F6;
+	background-color: #FFF5C9;
 	border: 1px solid #E8E8E8;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;

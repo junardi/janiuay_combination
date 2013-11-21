@@ -865,6 +865,17 @@ class Home extends CI_Controller {
 	}
 
 	
+	function janiuay_relief_operation() {
+		
+		$data = array(
+			"images" => "images_folder",
+			"videos" => "videos_folder"
+		);
+		
+
+		$this->load->view('relief_gallery', $data);
+	}
+	
 } // end class 
 
 
