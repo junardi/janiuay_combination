@@ -141,6 +141,7 @@
 .news .tabs div #news_list_form .list { 	
 	border-collapse: collapse;
 	width: 100%;
+	font-family: cambria;
 }
 
 .news .tabs div #news_list_form .list th {

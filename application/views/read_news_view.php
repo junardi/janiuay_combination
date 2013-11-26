@@ -17,6 +17,14 @@
 					<?php echo $content; ?>
 				</div>
 				
+			<?php } else { ?>
+				<?php 
+					echo "
+						<div>
+							<p style='text-align: center;'>News not found. Select news in the homepage.</p>
+						</div>
+					";
+				?>
 			<?php } ?>
 			
 			<?php if(isset($image_file_names) && $image_file_names != NULL) { ?>
@@ -181,16 +189,8 @@
 						
 					</div> <!-- end slider -->
 			
-			<?php } else { ?>
-				<?php 
-					echo "
-						<div>
-							<p style='text-align: center;'>News not found. Select news in the homepage.</p>
-						</div>
-					";
-				?>
 			<?php } ?>
-			
+		
 		</div> <!--end read news-->
 		
 		<!-- login tool below -->

@@ -153,7 +153,6 @@ abbr[title], acronym[title] {
 	border-right: none;
 }
 
-
 /* Branding below */
 
 #branding {	
@@ -169,7 +168,7 @@ abbr[title], acronym[title] {
 	left: 350px;
 }
 
-#branding #head_title div{	
+#branding #head_title div {	
 	margin-left: 30px;
 }
 

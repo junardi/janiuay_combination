@@ -3,7 +3,6 @@
 }
 
 #content_area .read_article h3 {
-	
 	font-weight: bold;
 	font-size: 18px;
 	margin-left: 10px;
@@ -12,11 +11,12 @@
 }
 
 #content_area .read_article .content {
+	font-family: cambria;
 	margin-top: 10px;
 	padding: 10px;
 	border-box: box-sizing;
 	-moz-border-box: box-sizing;
-	-webkit-border-box: box sizing;
+	-webkit-border-box: box-sizing;
 }
 
 

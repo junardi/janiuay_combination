@@ -635,6 +635,37 @@ var loginModule = (function() {
 
 	var $login_form = $("#login_form");
 	
+	var $username = $("#username");
+	var $password = $("#password");
+	
+	var inputs_focus = function() {
+		
+		$username.focus(function(){
+			$(this).css({
+				'border': '1px solid #000000', 
+				'color': '#000000'
+			});
+		}).blur(function(){
+			$(this).css({
+				'border': '1px solid #ABADB3', 
+				'color': '#5C5C5C'
+			});
+		});
+		
+		$password.focus(function(){
+			$(this).css({
+				'border': '1px solid #000000', 
+				'color': '#000000'
+			});
+		}).blur(function(){
+			$(this).css({
+				'border': '1px solid #ABADB3', 
+				'color': '#5C5C5C'
+			});
+		});
+	};
+	
+
 	var login_form_submit = function() {
 		
 		$login_form.on('submit', function(){
@@ -659,6 +690,7 @@ var loginModule = (function() {
 	};
 	
 	return {
+		inputs_focus: inputs_focus,
 		login_form_submit: login_form_submit
 	}
 	
@@ -666,7 +698,9 @@ var loginModule = (function() {
 
 // execute loginModuleBelow
 
+loginModule.inputs_focus();
 loginModule.login_form_submit();
+
 
 // barangayModule below
 
@@ -823,7 +857,7 @@ tabsModule.tabs_content();
 
 // Hymn module below 
 
-var hymnModule = (function(){
+var hymnModule = (function() {
 	
 	var start_play = function() {
 		
@@ -855,6 +889,21 @@ var hymnModule = (function(){
 
 var imageDynamicModule = (function() {
 	
+	var $image_popup = $("#image_popup");
+	
+	var windowWidth = document.documentElement.clientWidth;
+	var windowHeight = document.documentElement.clientHeight;
+
+	var image_popup_width = $image_popup.width();
+	var image_popup_height = $image_popup.height();
+	
+	var center_image_popup = function() {
+		$image_popup.css({
+			"top": windowHeight/2-image_popup_height/2,
+			"left": windowWidth/2-image_popup_width/2
+		});
+	};
+	
 	var close_image = function() {
 		$(document).on('click', '.close_image', function(){
 			$("#image_popup_container").fadeOut();
@@ -864,22 +913,23 @@ var imageDynamicModule = (function() {
 	
 	var view_image = function() {
 		$(document).on('click', '.view_image', function() {
-				var link = $(this);
-				$.get(link.attr('href'), link.serialize(), function(data){
-			
-					$("#image_popup_container").fadeIn(function() {
-						$(this).children().children('img').attr('src', data.image_src);
-						$(this).children().children('h1').text(data.title);
-						$(this).children().children('p').text(data.caption);
-					});
-					
-				}, "json");
+			var link = $(this);
+			$.get(link.attr('href'), link.serialize(), function(data){
+		
+				$("#image_popup_container").fadeIn(function() {
+					$(this).children().children('img').attr('src', data.image_src);
+					$(this).children().children('h1').text(data.title);
+					$(this).children().children('p').text(data.caption);
+				});
 				
-				return false;
+			}, "json");
+			
+			return false;
 		});
 	};
 	
 	return {
+		center_image_popup: center_image_popup,
 		close_image: close_image,
 		view_image: view_image
 	}
@@ -888,6 +938,7 @@ var imageDynamicModule = (function() {
 
 //  image dynamic module below 
 
+//imageDynamicModule.center_image_popup();
 imageDynamicModule.close_image();
 imageDynamicModule.view_image();
 
@@ -965,6 +1016,39 @@ var navLinkModule = (function() {
 // execute navLinkModule Below 
 
 navLinkModule.link_click();
+
+// Search Module Below
+
+var searchModule = (function() {
+	
+	var search_input = function() {
+		
+		var $search_something = $("#search_something");
+		
+		$search_something.focus(function(){
+			$(this).css({
+				'border': '1px solid #000000', 
+				'color': '#000000'
+			});
+		}).blur(function(){
+			$(this).css({
+				'border': '1px solid #ABADB3', 
+				'color': '#5C5C5C'
+			});
+		});
+		
+	};
+	
+	return {
+		search_input: search_input
+	}
+	
+})()
+
+// execute search module below
+
+searchModule.search_input();
+
 
 
 
