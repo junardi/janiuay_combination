@@ -850,6 +850,25 @@ class Home extends CI_Controller {
 	
 	/* end downloads */
 	
+	
+	function forgot_password() {
+		
+		$data['page_title'] = "Forgot Password";
+		
+		$site_url = site_url();
+		$breadcrumb_link = "<p><a href='{$site_url}'>Home</a> &raquo; Forgot Password</p>";
+		
+		$data['breadcrumbs'] = "
+			<div id='breadcrumbs' class='grid_12'>
+				{$breadcrumb_link}
+			</div>
+		";
+		
+		$data['main_content'] = "forgot_password_view";
+		$this->load->view('template/content', $data);
+	
+	}
+	
 	// encryptions tests for security
 	
 	function secure() {

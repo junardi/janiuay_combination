@@ -17,9 +17,6 @@
 			<div>
 				<abbr title="view details"><a href="<?php echo site_url(); ?>/home/photo_gallery?scroll_location=marks"><img src="<?php echo base_url(); ?>images/slideshow/marks.png" alt="Janiuay Landmarks" /></a></abbr>
 			</div>
-			<div>
-				<abbr title="view details"><a href="<?php echo site_url(); ?>/home/photo_gallery?scroll_location=spots"><img src="<?php echo base_url(); ?>images/slideshow/spots.png" alt="Janiuay Beautiful Spots" /></a></abbr>
-			</div>
 		</div>
 		<div class="grid_3 omega login_area">
 			<?php $this->load->view('tools/login_area'); ?>

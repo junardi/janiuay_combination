@@ -12,4 +12,4 @@
 	<input type="submit" value="Login" />
 	<img src="<?php echo base_url(); ?>images/login_loader.gif" alt="" />
 </form>
-<p><a href="#">Forgot Username or Password?</a></p>
+<p><a href="<?php echo site_url(); ?>/home/forgot_password">Forgot Username or Password?</a></p>
