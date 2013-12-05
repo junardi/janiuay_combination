@@ -744,7 +744,7 @@ class Home extends CI_Controller {
 				$data['page_title'] = "Quipot National High School";
 				
 				$site_url = site_url();
-				$breadcrumb_link = "<p><a href='{$site_url}'>Home</a> &raquo; About Us &raquo; Schools $raquo; Quipot National High School</p>";
+				$breadcrumb_link = "<p><a href='{$site_url}'>Home</a> &raquo; About Us &raquo; Schools &raquo; Quipot National High School</p>";
 				
 				$data['breadcrumbs'] = "
 					<div id='breadcrumbs' class='grid_12'>
@@ -867,6 +867,9 @@ class Home extends CI_Controller {
 		$data['main_content'] = "forgot_password_view";
 		$this->load->view('template/content', $data);
 	
+	}
+	
+	function retrieve_password() {
 	}
 	
 	// encryptions tests for security

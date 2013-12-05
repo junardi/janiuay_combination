@@ -1049,6 +1049,58 @@ var searchModule = (function() {
 
 searchModule.search_input();
 
+// Forgot Password Module Below 
+
+var forgotPasswordModule = (function() {
+	
+	var $retrieve_password_form = $("#retrieve_password_form");
+	
+	var retrieve_submit = function() {
+		$retrieve_password_form.on('submit', function() {
+			$("#forgot_error").fadeOut(function(){
+				$("#blue_loader").fadeIn(function(){
+					$(this).fadeOut(function(){
+						$("#forgot_error").fadeIn();
+					}); 
+				});
+			});
+			return false;
+		});
+	};
+	
+	var input_focus = function() {
+		
+		$("#forgot_email_add").focus(function(){
+			$(this).css({
+				'border': '1px solid #000000', 
+				'color': '#000000'
+			});
+		}).blur(function(){
+			$(this).css({
+				'border': '1px solid #ABADB3', 
+				'color': '#5C5C5C'
+			});
+		});
+		
+	};
+	
+	return {
+		retrieve_submit: retrieve_submit,
+		input_focus: input_focus
+	}
+	
+})()
+
+// Execute Forgot Password Module Below 
+
+forgotPasswordModule.retrieve_submit();
+forgotPasswordModule.input_focus();
+
+
+
+
+
+
 
 
 

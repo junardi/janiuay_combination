@@ -30,6 +30,9 @@
 		<!-- Main Navigation below -->
 		
 		<div id="navigation" class="grid_12">
+			
+			<?php if(!isset($site_maintenance)) { ?>
+			
 			<div id="left_nav" class="grid_8 omega">
 				<ul id="first_nav" class="dropdown">
 					<li>
@@ -138,6 +141,9 @@
 					<li><abbr title="home"><a href="<?php echo site_url(); ?>"><img src="<?php echo base_url(); ?>images/home.png" alt="home image" /></a></abbr></li>
 				</ul>
 			</div>
+			
+			<?php } ?>
+			
 		</div> <!-- end navigation -->
 		
 		<div id="branding" class="grid_12">

@@ -4,9 +4,11 @@
 	<link rel="stylesheet" href="<?php echo base_url();?>styles/magic.css" type="text/css" media="screen"/>
 	
 	<div class="magic_nav_wrap">
+		
 		<ul class="group" id="magic">
-            <li class="current_page_item">
-            	<a target="_blank" href="http://janiuay.gov.ph">Janiuay Government</a>
+          
+			<li class="current_page_item">
+            	<a href="<?php echo current_url(); ?>">Janiuay Government</a>
             </li>
 			<li>
             	<a target="_blank" href="http://iloilo.gov.ph">Iloilo Government</a>
@@ -14,16 +16,15 @@
 			<li>
             	<a target="_blank" href="http://janiuay.wvsu.edu.ph">WVSU Janiuay</a>
             </li>
-			<li>
-            	<a target="_blank" href="http://mastermindtechnology.org">Mastermind Tech. Inc.</a>
-            </li>
+	
         </ul>
+		
     </div>
 	
 	<div class="container clearfix">
 		<div id="footer" class="grid_12">
 			<p>Copyright &copy; 2013.</p>
-			<p>All Rights Reserved <a href="#">janiuay.gov.ph</a></p>
+			<p>All Rights Reserved <a href="<?php echo current_url(); ?>">janiuay.gov.ph</a></p>
 		</div>
 	</div> <!--end container clearfix-->
 	
