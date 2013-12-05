@@ -24,7 +24,7 @@
 	<div class="container clearfix">
 		<div id="footer" class="grid_12">
 			<p>Copyright &copy; 2013.</p>
-			<p>All Rights Reserved <a href="<?php echo current_url(); ?>">janiuay.gov.ph</a></p>
+			<p>All Rights Reserved <a href="<?php echo current_url(); ?>">surongjaniuay.com</a></p>
 		</div>
 	</div> <!--end container clearfix-->
 	
