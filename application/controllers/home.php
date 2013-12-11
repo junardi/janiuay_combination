@@ -2,17 +2,29 @@
 
 class Home extends CI_Controller {
 	
+	// global variables below 
+	
+	private $get_page_tags_by_url;
+	
 	// lets construct below 
 	
 	function __construct() {
 		parent::__construct();
+	
+		$this->load->model('page_tags_model');
+		$url = current_url();
+		
+		$this->get_page_tags_by_url = $this->page_tags_model->get_page_tags_by_url($url);
+		
+		$this->session->set_userdata('page_tags', $this->get_page_tags_by_url);
+	
 	}
 	
 	/* right navigation below */
 	
 		function index() {
 			
-			// get the news section and pass
+			//get the news section and pass
 			$this->load->model("news_model");
 			$get_news = $this->news_model->get_news();
 			$data['news_data'] = $get_news;
@@ -24,10 +36,11 @@ class Home extends CI_Controller {
 			
 			$data['main_content'] = 'home_view';
 			$this->load->view('template/content', $data);
+			
 		}
 		
 		function contact() {
-			
+		
 			$data['page_title'] = "Contact Us";
 		
 			$site_url = site_url();
@@ -850,6 +863,40 @@ class Home extends CI_Controller {
 	
 	/* end downloads */
 	
+	function process_page_tags() {
+	
+		$page_tag_id = $this->input->post('page_tag_id');
+		$action = $this->input->post('action');
+		
+		$page_tags_data = array(
+			"page_tags" => trim($this->input->post('page_tags')),
+			"url" => $this->input->post('url')
+		);
+		
+		$this->load->model('page_tags_model');
+		
+		if(isset($action) && $action == "add") {
+			$add_page_tags = $this->page_tags_model->add_page_tags($page_tags_data);
+			
+			if($add_page_tags) {
+				$data['status'] = true;
+			} else {
+				$data['status'] = false;
+			}
+		
+		} elseif(isset($action) && $action == "update") {
+			$update_page_tags = $this->page_tags_model->update_page_tags($page_tag_id, $page_tags_data);
+			
+			if($update_page_tags) {
+				$data['status'] = true;
+			} else {
+				$data['status'] = false;
+			}
+		}
+		
+		echo json_encode($data);
+	
+	}
 	
 	function forgot_password() {
 		
@@ -876,7 +923,7 @@ class Home extends CI_Controller {
 	
 	function secure() {
 		$this->load->helper('security');
-		echo do_hash("writer@*05");
+		echo do_hash("patanoy@*05");
 	}
 	
 	function not_available($data) {

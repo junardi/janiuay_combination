@@ -35,7 +35,7 @@
 			</div>
 		
 			<div class="grid_4 topics">
-				<h2><span class="first">FEATURED</span> NEWS</h2>
+				<h2>FEATURED NEWS</h2>
 				<?php
 					if(isset($news_data) && $news_data != NULL) {
 						foreach($news_data as $row) {
@@ -67,7 +67,7 @@
 				
 			</div>
 			<div class="grid_4 topics">
-				<h2><span class="first">FEATURED</span> ARTICLES</h2>
+				<h2>FEATURED ARTICLES</h2>
 				<?php
 					if(isset($articles_data) && $articles_data != NULL) {
 					
@@ -160,7 +160,11 @@
 			</div>
 			
 		</div> <!-- end sidebar_staffs-->
+		
+	
 	</div> <!--end write_ups-->
+	
+	
 	
 	
 	

@@ -21,9 +21,16 @@ class Login extends CI_Controller {
 		
 		if($validate_user) {
 			
+			$get_employee_role_by_username = $this->employee_model->get_employee_role_by_username($username);
+			
+			foreach($get_employee_role_by_username as $row) {
+				$role = $row->role;
+			}
+			
 			$session_data = array(
 				"username" => $username,
-				"is_logged_in" => true
+				"is_logged_in" => true,
+				"role" => $role
 			);
 			
 			$this->session->set_userdata($session_data);
@@ -34,6 +41,7 @@ class Login extends CI_Controller {
 		}
 	
 		echo json_encode($data);
+	
 	}
 	
 }

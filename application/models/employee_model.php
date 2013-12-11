@@ -16,4 +16,12 @@ class Employee_model extends CI_Model {
 		return $query->result();
 	}
 	
+	function get_employee_role_by_username($username) {
+		$this->db->select('role');
+		$this->db->where('username', $username);
+		$query = $this->db->get('employees');
+		
+		return $query->result();
+	}
+	
 }

@@ -41,6 +41,14 @@ p {
 	font-size: 90%;
 }
 
+.error {
+	color: #F95811;
+}
+
+.success {
+	color: #001C4F;
+}
+
 .first {
 	color: #FFF;
 }
@@ -361,7 +369,6 @@ abbr[title], acronym[title] {
 	text-indent: 30px;
 }
 
-
 #write_ups  .main_write_ups  .topics {
 	background-color: #FFF5C9;
 	border: 1px solid #E8E8E8;
@@ -373,6 +380,7 @@ abbr[title], acronym[title] {
 }
 
 #write_ups  .main_write_ups .topics h2 {
+	color: #FFFFFF;
 	background: linear-gradient(#002D68, #001C4E);
 	background: -webkit-linear-gradient(#002D68, #001C4E);
 	background: -moz-linear-gradient(#002D68, #001C4E);

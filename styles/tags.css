@@ -1,0 +1,66 @@
+#tags_container {
+	background-color: #FFF5C9;
+	-webkit-border-radius: 4px;	
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#tags_container #tags_data {
+	padding: 10px;
+	width: 600px;
+	margin: 0px auto;
+	text-align: center;
+	background-color: #FFF5C9;
+}
+
+#tags_container #tags_data h4 {
+	font-size: 30px;
+	padding: 10px;
+}
+
+#tags_container #tags_data textarea {
+	width: 430px;
+	height: 160px;
+	padding: 10px;
+	color: #000000;
+	font-size: 15px;
+	border: 1px solid #ABADB3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#tags_container #tags_data input[type='submit'] {
+	border: 1px solid #9C9C9C;
+	padding: 10px 10px;
+	background: linear-gradient(#FECB2C, #F99016);
+	background: -webkit-linear-gradient(#FECB2C, #F99016);
+	background: -moz-linear-gradient(#FECB2C, #F99016);
+	background: -o-linear-gradient(#FECB2C, #F99016);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FECB2C', EndColorStr='#F99016');
+	color: #FFF;
+	cursor: pointer;
+	border: 1px solid #9C9C9C;
+	margin-top: 15px;
+}
+
+#tags_container #tags_data .status {
+	margin-top: 15px;
+}  
+
+#tags_container #tags_data #blue_loader {
+	display: none;
+}
+
+#tags_container #tags_data #page_tags_status {	
+	display: none;
+}
+
+
+
+
+
+
+
+
+

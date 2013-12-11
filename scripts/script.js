@@ -1,6 +1,6 @@
 // global delay below 
 
-var delay = (function(){
+var delay = (function() {
 	var timer = 0;
 	return function(callback, ms){
 		clearTimeout (timer);
@@ -701,7 +701,6 @@ var loginModule = (function() {
 loginModule.inputs_focus();
 loginModule.login_form_submit();
 
-
 // barangayModule below
 
 var barangayModule = (function() {
@@ -1096,8 +1095,61 @@ var forgotPasswordModule = (function() {
 forgotPasswordModule.retrieve_submit();
 forgotPasswordModule.input_focus();
 
+// tags module below 
 
+var tagsModule = (function() {
+	
+	page_tags_fom = $("#page_tags");
+	
+	var add_page_tag = function() {
+		
+		$(page_tags_fom).ajaxForm({
+			dataType: 'json',
+			forceSync: true,
+			beforeSubmit: add_page_tags,
+			success: add_page_tag_status
+		});
+		
+		function add_page_tags() {
+			console.log("submitting");
+			return true;
+		}
+		
+		function add_page_tag_status(data) {
+			if(data.status) {
+				
+				$("#page_tags_status").fadeOut(function(){
+					$("#blue_loader").fadeIn(function(){
+						$(this).fadeOut(function(){
+							$("#page_tags_status").fadeIn().text("Tags saved").removeClass("error").addClass("success");
+						}); 
+					});
+				});
+				
+			} else {
+				
+				$("#page_tags_status").fadeOut(function(){
+					$("#blue_loader").fadeIn(function(){
+						$(this).fadeOut(function(){
+							$("#page_tags_status").fadeIn().text("Tags not saved").removeClass("success").addClass("error");
+						}); 
+					});
+				});
+				
+			}
+		}
+	
+	};	
+	
+	return {
+		add_page_tag: add_page_tag
+	}
+	
+})()
 
+// execute tags module below 
+
+tagsModule.add_page_tag();
 
 
 
