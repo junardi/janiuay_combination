@@ -219,7 +219,7 @@ abbr[title], acronym[title] {
 }
 
 #branding #search_area form a img {
-	vertical-align: bottom;
+	vertical-align: top;
 }
 
 /* Breadcrumbs below */
