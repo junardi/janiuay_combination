@@ -4,7 +4,7 @@
 	
 		<div class="grid_9 contact">
 			<h3>CONTACT <span class="log">US</span></h3>
-			<form action="#" method="post" enctype="multipart/form-data" autocomplete="off" id="contact_form">
+			<form action="<?php echo site_url(); ?>/home/process_message" method="post" enctype="multipart/form-data" autocomplete="off" id="contact_form">
 				<table>
 					<tr>
 						<td><label for="full_name">Full Name <span class="required">*</span></label></td>
@@ -26,11 +26,6 @@
 						<td><textarea name="message" id="message" cols="30" rows="10"></textarea></td>
 						<td class="input_validation error message">&#8592; Testing validation</td>
 					</tr>
-					<tr>
-						<td><label for="userfile">Attach File</label></td>
-						<td><input type="file" name="userfile" id="userfile" /></td>
-					</tr>
-				
 					<tr>
 						<td colspan='2'><input type="submit" value="Send" /></td>
 					</tr>

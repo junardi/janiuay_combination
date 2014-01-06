@@ -56,6 +56,45 @@ class Home extends CI_Controller {
 			$this->load->view('template/content', $data);
 		}
 		
+		function process_message() {
+			
+			$full_name = trim($this->input->post('full_name'));
+			$email = trim($this->input->post('email'));
+			$subject = trim($this->input->post('subject'));
+			$message = trim($this->input->post('message'));
+			
+			$this->load->library('email');
+
+			$this->email->from($email, $full_name);
+			$this->email->to('janiuaywebmasters@gmail.com'); 
+	
+			$this->email->subject('Email Test');
+			$this->email->message('Testing the email class.');	
+
+			if($this->email->send()) {
+				redirect('/home/form/', 'refresh');
+			} else {
+				echo $this->email->print_debugger();
+			}
+		}
+		
+		function message_sent() {
+			$data['page_title'] = "Message Sent";
+		
+			$site_url = site_url();
+			$contact = site_url() . "/home/contact";
+			$breadcrumb_link = "<p><a href='{$site_url}'>Home</a> &raquo; <a href='{$contact}'>Contact Us</a> &raquo; Message Sent</p>";
+			
+			$data['breadcrumbs'] = "
+				<div id='breadcrumbs' class='grid_12'>
+					{$breadcrumb_link}
+				</div>
+			";
+			
+			$data['main_content'] = "message_sent_view";
+			$this->load->view('template/content', $data);
+		}
+		
 		function site_map() {
 			
 			$data['page_title'] = "Sitemap";

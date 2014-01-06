@@ -2,7 +2,7 @@
 	
 	<div id="content_area" class="grid_12">
 		<div class="grid_9 search">
-			<h3>SEA<span class="log">RCH</span></h3>
+			<p>Search engine under construction. temporarily visit our <a href="<?php echo site_url(); ?>/home/site_map">Sitemap</a></p>
 			
 		</div>
 		<div class="grid_3 omega login_area">
