@@ -160,8 +160,10 @@
 				</div>
 			</div>
 			<div id="search_area" class="grid_4 omega">
-				<form action="#" method="post">
+				<form action="<?php echo site_url(); ?>/home/search" id="outside_search" method="post">
 					<input type="text" name="search" id="search_something" />
+					<!--<input type="submit" value="Search" />-->
+					<!-- image submit -->
 					<a href="#"><img src="<?php echo base_url(); ?>images/button_search.gif" alt="Search Button" /></a>
 				</form>
 			</div>
@@ -172,5 +174,4 @@
 				echo $breadcrumbs;
 			}
 		?>
-		
 		

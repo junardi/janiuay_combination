@@ -218,6 +218,21 @@ abbr[title], acronym[title] {
 	border: 1px solid #919191;
 }
 
+/*#branding #search_area form input[type='submit'] {
+	padding: 5px;
+	background: linear-gradient(#FECB2C, #F99016);
+	background: -webkit-linear-gradient(#FECB2C, #F99016);
+	background: -moz-linear-gradient(#FECB2C, #F99016);
+	background: -o-linear-gradient(#FECB2C, #F99016);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FECB2C', EndColorStr='#F99016');
+	color: #FFF;
+	cursor: pointer;
+	border-right: 2px solid #9C9C9C;
+	border-bottom: 2px solid #9C9C9C;
+}*/
+
+/* if set as an image the search */
+
 #branding #search_area form a img {
 	vertical-align: top;
 }

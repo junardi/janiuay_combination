@@ -226,7 +226,7 @@ class Home extends CI_Controller {
 			$data['main_content'] = "local_government_unit_view";
 			$this->load->view('template/content', $data);
 		}
-	
+		
 	/* end mayors_page */
 	
 	/* Services below */
@@ -917,6 +917,23 @@ class Home extends CI_Controller {
 	}
 	
 	function retrieve_password() {
+	}
+	
+	function search() {
+		
+		$data['page_title'] = "Search";
+		
+		$site_url = site_url();
+		$breadcrumb_link = "<p><a href='{$site_url}'>Home</a> &raquo; Search</p>";
+		
+		$data['breadcrumbs'] = "
+			<div id='breadcrumbs' class='grid_12'>
+				{$breadcrumb_link}
+			</div>
+		";
+		
+		$data['main_content'] = "search_view";
+		$this->load->view('template/content', $data);
 	}
 	
 	// encryptions tests for security

@@ -1020,6 +1020,9 @@ navLinkModule.link_click();
 
 var searchModule = (function() {
 	
+	var $outside_search_form = $("#outside_search"); 
+	var $outside_search_link = $("#search_area form a");
+	
 	var search_input = function() {
 		
 		var $search_something = $("#search_something");
@@ -1038,8 +1041,21 @@ var searchModule = (function() {
 		
 	};
 	
+	var search_outside = function() {
+		
+		$outside_search_link.click(function(){
+			$outside_search_form.trigger('submit');
+			return false;
+		});
+		
+		$outside_search_form.on('submit', function(){
+			return true;
+		});
+	};
+	
 	return {
-		search_input: search_input
+		search_input: search_input,
+		search_outside: search_outside
 	}
 	
 })()
@@ -1047,6 +1063,7 @@ var searchModule = (function() {
 // execute search module below
 
 searchModule.search_input();
+searchModule.search_outside();
 
 // Forgot Password Module Below 
 
