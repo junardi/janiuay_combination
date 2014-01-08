@@ -14,6 +14,13 @@ class Image_model extends CI_Model {
 		return $query->result();
 	}
 	
+	function get_image_id_by_category($category) {
+		$this->db->select('image_id');
+		$this->db->where('category', $category);
+		$query = $this->db->get('images_data');
+		return $query->result();
+	}
+	
 	function get_image_file_name_by_image_id($image_id) {
 		$this->db->select('file_name');
 		$this->db->where('image_id', $image_id);

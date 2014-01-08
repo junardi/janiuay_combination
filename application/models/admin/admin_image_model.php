@@ -109,6 +109,21 @@ class Admin_image_model extends CI_Model {
 		return $query->result();
 	}
 	
+	function get_image_id_by_category_id_and_category($category_id, $category) {
+		$this->db->select('image_id');
+		$this->db->where('category_id', $category_id);
+		$this->db->where('category', $category);
+		$query = $this->db->get('images_data');
+		return $query->result();
+	}
+	
+	function get_image_id_by_category($category) {
+		$this->db->select('image_id');
+		$this->db->where('category', $category);
+		$query = $this->db->get('images_data');
+		return $query->result();
+	}
+	
 	function delete_image_data_by_category_id($category_id) {
 		$this->db->where('category_id', $category_id);
 		$query = $this->db->delete('images_data');

@@ -86,7 +86,7 @@ class Admin extends CI_Controller {
 			
 			// get images if available for update
 			
-			$get_image_id = $this->admin_image_model->get_image_id_by_category_id($update_id);
+			$get_image_id = $this->admin_image_model->get_image_id_by_category_id_and_category($update_id, "news");
 		
 			$data['images_file_name'] = array();
 			
@@ -593,7 +593,7 @@ class Admin extends CI_Controller {
 			
 			// get images if available for update
 			
-			$get_image_id = $this->admin_image_model->get_image_id_by_category_id($update_id);
+			$get_image_id = $this->admin_image_model->get_image_id_by_category_id_and_category($update_id, "articles");
 			
 			$data['images_file_name'] = array();
 			

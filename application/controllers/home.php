@@ -139,20 +139,23 @@ class Home extends CI_Controller {
 			$get_news_by_id = $this->news_model->get_news_by_news_id($news_id);
 			$data['selected_news'] = $get_news_by_id;
 			
-			$get_image_id = $this->image_model->get_image_id_by_category_id($news_id);
+			$get_image_id = $this->image_model->get_image_id_by_category("news");
 			
-			$data['image_file_names'] = array();
-			
-			foreach($get_image_id as $row) {
-				$image_id = $row->image_id;
-				$get_image_file_name_by_image_id = $this->image_model->get_image_file_name_by_image_id($image_id);          
+			if($get_image_id != NULL) {
 				
-				foreach($get_image_file_name_by_image_id as $row_file) {
-					$file_name = $row_file->file_name;
+				$data['image_file_names'] = array();
+			
+				foreach($get_image_id as $row) {
+					$image_id = $row->image_id;
+					$get_image_file_name_by_image_id = $this->image_model->get_image_file_name_by_image_id($image_id);          
 					
-					$data['image_file_names'][] = array(
-						"file_name" => $file_name
-					);
+					foreach($get_image_file_name_by_image_id as $row_file) {
+						$file_name = $row_file->file_name;
+						
+						$data['image_file_names'][] = array(
+							"file_name" => $file_name
+						);
+					}
 				}
 			}
 			
@@ -181,23 +184,26 @@ class Home extends CI_Controller {
 			$get_article_by_id = $this->articles_model->get_article_by_article_id($article_id);
 			$data['selected_article'] = $get_article_by_id;
 		
-			$get_image_id = $this->image_model->get_image_id_by_category_id($article_id);
+			$get_image_id = $this->image_model->get_image_id_by_category("articles");
 		
-			$data['image_file_names'] = array();
-			
-			foreach($get_image_id as $row) {
-				$image_id = $row->image_id;
-				$get_image_file_name_by_image_id = $this->image_model->get_image_file_name_by_image_id($image_id);          
+			if($get_image_id != NULL) {
 				
-				foreach($get_image_file_name_by_image_id as $row_file) {
-					$file_name = $row_file->file_name;
+				$data['image_file_names'] = array();
+			
+				foreach($get_image_id as $row) {
+					$image_id = $row->image_id;
+					$get_image_file_name_by_image_id = $this->image_model->get_image_file_name_by_image_id($image_id);          
 					
-					$data['image_file_names'][] = array(
-						"file_name" => $file_name
-					);
+					foreach($get_image_file_name_by_image_id as $row_file) {
+						$file_name = $row_file->file_name;
+						
+						$data['image_file_names'][] = array(
+							"file_name" => $file_name
+						);
+					}
 				}
 			}
-		
+			
 			$data['main_content'] = "read_article_view";
 			$this->load->view('template/content', $data);
 			

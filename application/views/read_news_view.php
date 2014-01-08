@@ -182,8 +182,8 @@
 
 							<div id="left-shadow"></div>
 							<div id="right-shadow"></div>
-
-						</div>
+							
+						</div> <!--end div -->
 
 						<img class="scrollButtons right" src="<?php echo base_url(); ?>images/moving_box/rightarrow.png">
 						
