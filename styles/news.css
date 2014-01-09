@@ -1,0 +1,32 @@
+#content_area .news {
+	margin: 10px;
+}
+
+#content_area .news h3 {
+	font-weight: bold;
+	font-size: 18px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+#content_area .news div {
+	margin-top: 20px;
+}
+
+#content_area .news div img {
+	float: left;
+	margin-right: 15px;
+}
+
+#content_area .news div h4 {
+	font-size: 18px;
+	color: #001D4F;
+	font-weight: bold;
+}
+
+#content_area .news div a {
+	color: #F85811;
+}
+
+

@@ -26,12 +26,12 @@ class Home extends CI_Controller {
 			
 			//get the news section and pass
 			$this->load->model("news_model");
-			$get_news = $this->news_model->get_news();
+			$get_news = $this->news_model->get_news_limit_two();
 			$data['news_data'] = $get_news;
 			
 			// get the articles section and pass
 			$this->load->model("articles_model");
-			$get_articles = $this->articles_model->get_articles();
+			$get_articles = $this->articles_model->get_articles_limit_two();
 			$data['articles_data'] = $get_articles;
 			
 			$data['main_content'] = 'home_view';
@@ -117,6 +117,28 @@ class Home extends CI_Controller {
 	/* end right navigation  */
 	
 	/* homepage features below */ 
+	
+		function news() {
+			
+			//get the news section and pass
+			$this->load->model("news_model");
+			$get_news = $this->news_model->get_news();
+			$data['news_data'] = $get_news;
+			
+			$data['page_title'] = "News";
+			
+			$site_url = site_url();
+			$breadcrumb_link = "<p><a href='{$site_url}'>Home</a> &raquo; News</p>";
+			
+			$data['breadcrumbs'] = "
+				<div id='breadcrumbs' class='grid_12'>
+					{$breadcrumb_link}
+				</div>
+			";
+			
+			$data['main_content'] = "news_view";
+			$this->load->view('template/content', $data);
+		}
 	
 		function read_news() {
 		

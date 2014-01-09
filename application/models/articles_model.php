@@ -8,7 +8,14 @@ class Articles_model extends CI_Model {
 	}
 	
 	function get_articles() {	
+		$this->db->order_by('date_created', 'desc');
 		$query = $this->db->get('articles');
+		return $query->result();
+	}
+	
+	function get_articles_limit_two() {	
+		$this->db->order_by('date_created', 'desc');
+		$query = $this->db->get('articles', 2);
 		return $query->result();
 	}
 	
