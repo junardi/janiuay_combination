@@ -139,7 +139,8 @@ class Home extends CI_Controller {
 			$get_news_by_id = $this->news_model->get_news_by_news_id($news_id);
 			$data['selected_news'] = $get_news_by_id;
 			
-			$get_image_id = $this->image_model->get_image_id_by_category("news");
+			//$get_image_id = $this->image_model->get_image_id_by_category("news");
+			$get_image_id = $this->image_model->get_image_id_by_category_id_and_category($news_id, "news");
 			
 			if($get_image_id != NULL) {
 				
@@ -184,7 +185,8 @@ class Home extends CI_Controller {
 			$get_article_by_id = $this->articles_model->get_article_by_article_id($article_id);
 			$data['selected_article'] = $get_article_by_id;
 		
-			$get_image_id = $this->image_model->get_image_id_by_category("articles");
+			//$get_image_id = $this->image_model->get_image_id_by_category("articles");
+			$get_image_id = $this->image_model->get_image_id_by_category_id_and_category($article_id, "articles");
 		
 			if($get_image_id != NULL) {
 				
