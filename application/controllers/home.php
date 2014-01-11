@@ -110,8 +110,6 @@ class Home extends CI_Controller {
 			
 			$data['main_content'] = "sitemap_view";
 			$this->load->view('template/content', $data);
-			
-			
 		}
 	
 	/* end right navigation  */
@@ -119,12 +117,12 @@ class Home extends CI_Controller {
 	/* homepage features below */ 
 	
 		function news() {
-			
+		
 			//get the news section and pass
 			$this->load->model("news_model");
 			$get_news = $this->news_model->get_news();
-			$data['news_data'] = $get_news;
 			
+			$data['news_data'] = $get_news;
 			$data['page_title'] = "News";
 			
 			$site_url = site_url();
