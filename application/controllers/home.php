@@ -137,6 +137,28 @@ class Home extends CI_Controller {
 			$data['main_content'] = "news_view";
 			$this->load->view('template/content', $data);
 		}
+		
+		function articles() {
+		
+			//get the news section and pass
+			$this->load->model("articles_model");
+			$get_articles = $this->articles_model->get_articles();
+			
+			$data['articles_data'] = $get_articles;
+			$data['page_title'] = "Articles";
+			
+			$site_url = site_url();
+			$breadcrumb_link = "<p><a href='{$site_url}'>Home</a> &raquo; Articles</p>";
+			
+			$data['breadcrumbs'] = "
+				<div id='breadcrumbs' class='grid_12'>
+					{$breadcrumb_link}
+				</div>
+			";
+			
+			$data['main_content'] = "articles_view";
+			$this->load->view('template/content', $data);
+		}
 	
 		function read_news() {
 		

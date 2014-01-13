@@ -25,4 +25,13 @@ class Articles_model extends CI_Model {
 		return $query->result();
 	}
 	
+	function get_article_images_by_category_and_article_id($category, $article_id) {
+		$this->db->where('category', $category);
+		$this->db->where('category_id', $article_id);
+		$this->db->from('images_data');
+		$this->db->join('images', 'images.image_id=images_data.image_id');
+		$query = $this->db->get();
+		return $query->result();
+	} 
+	
 }

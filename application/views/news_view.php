@@ -28,31 +28,34 @@
 						
 						$get_image_data = $this->news_model->get_news_images_by_category_and_news_id("news", $news_id);
 					
-						$pass_news_data['image_id'] = array();
+						$pass_news_data['image'] = array();
 						
 						foreach($get_image_data as $row_i) {
-							$pass_news_data['image_id'][] = array(
-								"id" => $row_i->orig_name
+							$pass_news_data['image'][] = array(
+								"name" => $row_i->orig_name
 							);
 						}
 						
 			?>
 						<div>
-							<img src="<?php echo $thumbnail_image_src; ?>" alt='News Thumbnail' />
+							<?php 
+								if(count($pass_news_data['image']) != 0) {
+							
+							?>
+									<a href="<?php echo $pass_news_data['read_news_link']; ?>"><img class="news_thumbnail" src="<?php echo base_url() . 'uploads/' . $pass_news_data['image'][0]['name'];?>" alt="news thumbnail image" /></a>
+							<?php 
+								} else {
+							?>
+									<a href="<?php echo $pass_news_data['read_news_link']; ?>"><img class="news_thumbnail" src="<?php echo $thumbnail_image_src; ?>" alt='News Thumbnail' /></a>
+							<?php 
+								}
+							?>
+							
 							<h4><?php echo $pass_news_data['title']; ?></h4>
 							<p class='date_ui'><?php echo $pass_news_data['date_created']; ?></p>
 							<p><?php echo $pass_news_data['content']; ?></p>
 							<p class='more'><a href='<?php echo $pass_news_data['read_news_link']; ?>'>read more..</a></p>
 						
-							<?php 
-								if(count($pass_news_data['image_id']) != 0) {
-							
-							?>
-									<p><?php echo $pass_news_data['image_id'][0]['id']; ?></p>
-							<?php 
-								}
-							?>
-							
 						</div>
 			<?php 
 						
