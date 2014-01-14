@@ -22,7 +22,7 @@
 							'read_news_link' => $read_news_link
 						);
 						
-						$thumbnail_image_src = base_url() . "images/sample_thumbnail.png"; 
+						$thumbnail_image_src = base_url() . "images/news_thumbnail.png"; 
 						
 						$this->load->model("news_model");
 						

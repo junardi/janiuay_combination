@@ -451,6 +451,14 @@ abbr[title], acronym[title] {
 	color: #F85811;
 }
 
+#write_ups  .main_write_ups .topics div .see_all {
+	text-align: center;
+}
+
+#write_ups  .main_write_ups .topics div .see_all a {
+	text-decoration: none;
+}
+
 
 /* below is for the sidebar_staffs */
 

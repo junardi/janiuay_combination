@@ -39,13 +39,13 @@
 				<?php
 					if(isset($news_data) && $news_data != NULL) {
 						foreach($news_data as $row) {
-							
 							$news_id = $row->news_id;
 							$title = $row->title;
 							$content = word_limiter($row->content, 20);
 							$date_created = $row->date_created;
 						
 							$read_news_link = site_url() . "/home/read_news?id=" . $news_id;
+							$all_news_link = site_url() . "/home/news";
 							
 							echo "
 								<div>
@@ -56,6 +56,13 @@
 								</div>
 							";
 						}
+						
+						echo "
+							<div>
+								<p class='see_all'><a href='{$all_news_link}'>&#171; all news &raquo;</a></p>
+							</div>
+						";
+						
 					} else {
 						echo "
 							<div>
@@ -79,6 +86,7 @@
 							$date_created = $row->date_created;
 						
 							$read_article_link = site_url() . "/home/read_article?id=" . $article_id;
+							$all_articles_link = site_url() . "/home/articles";
 							
 							echo "
 								<div>
@@ -89,6 +97,12 @@
 								</div>
 							";
 						}
+						
+						echo "
+							<div>
+								<p class='see_all'><a href='{$all_articles_link}'>&#171; all articles &raquo;</a></p>
+							</div>
+						";
 						
 					} else {
 						echo "
