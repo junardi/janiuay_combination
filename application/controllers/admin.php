@@ -73,7 +73,8 @@ class Admin extends CI_Controller {
 			$get_selected_news = $this->admin_news_model->get_news_by_id($update_id);
 			$data['selected_news_data'] = $get_selected_news;
 			
-			$get_selected_tags = $this->admin_central_model->get_tag_by_category_id($update_id);
+			//$get_selected_tags = $this->admin_central_model->get_tag_by_category_id($update_id);
+			$get_selected_tags = $this->admin_central_model->get_tag_by_category_id_and_category($update_id, "news");
 			$data['selected_tags_data'] = $get_selected_tags;
 			
 			// set the data for update id
@@ -580,7 +581,8 @@ class Admin extends CI_Controller {
 			$get_selected_article = $this->admin_articles_model->get_article_by_id($update_id);
 			$data['selected_article_data'] = $get_selected_article;
 			
-			$get_selected_tags = $this->admin_central_model->get_tag_by_category_id($update_id);
+			//$get_selected_tags = $this->admin_central_model->get_tag_by_category_id($update_id);
+			$get_selected_tags = $this->admin_central_model->get_tag_by_category_id_and_category($update_id, "articles");
 			$data['selected_tags_data'] = $get_selected_tags;
 			
 			// set the data for update id

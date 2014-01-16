@@ -15,6 +15,14 @@ class Admin_central_model extends CI_Model {
 		return $query->result();
 	}
 	
+	function get_tag_by_category_id_and_category($category_id, $category) {
+		$this->db->where('category_id', $category_id);
+		$this->db->where('category', $category);
+		$query = $this->db->get('tags');
+		return $query->result();
+	}
+	
+	
 	function add_tags($tags_data) {
 	
 		$query = $this->db->insert('tags', $tags_data);
