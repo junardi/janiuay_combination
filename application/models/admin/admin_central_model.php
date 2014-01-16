@@ -22,7 +22,6 @@ class Admin_central_model extends CI_Model {
 		return $query->result();
 	}
 	
-	
 	function add_tags($tags_data) {
 	
 		$query = $this->db->insert('tags', $tags_data);
@@ -57,8 +56,17 @@ class Admin_central_model extends CI_Model {
 		}
 	}
 	
-	
-	
+	function update_tags_by_category_id_category_and_tags_data($category_id, $category, $tags_data) {
+		$this->db->where('category_id', $category_id);
+		$this->db->where('category', $category);
+		$query = $this->db->update('tags', $tags_data);
+		
+		if($query) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
 
 

@@ -488,7 +488,8 @@ class Admin extends CI_Controller {
 				"tags" => $tags
 			);
 			
-			$update_tags = $this->admin_central_model->update_tags($news_id, $tags_data);
+			//$update_tags = $this->admin_central_model->update_tags($news_id, $tags_data);
+			$update_tags = $this->admin_central_model->update_tags_by_category_id_category_and_tags_data($news_id, "news", $tags_data);
 			
 			// below is for the updating of the images for the news
 			
@@ -988,8 +989,8 @@ class Admin extends CI_Controller {
 				"tags" => $tags
 			);
 			
-			$update_tags = $this->admin_central_model->update_tags($article_id, $tags_data);
-			
+			//$update_tags = $this->admin_central_model->update_tags($article_id, $tags_data);
+			$update_tags = $this->admin_central_model->update_tags_by_category_id_category_and_tags_data($news_id, "articles", $tags_data);
 			
 			// below is for the updating of the images for the articles
 			
