@@ -2,6 +2,10 @@
 	margin: 10px;
 }
 
+#content_area .read_article .fb_comment_plugin {
+	margin-top: 40px;
+}
+
 #content_area .read_article h3 {
 	font-weight: bold;
 	font-size: 18px;

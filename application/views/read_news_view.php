@@ -17,17 +17,7 @@
 					<?php echo $content; ?>
 				</div>
 				
-			<?php } else { ?>
-				<?php 
-					echo "
-						<div>
-							<p style='text-align: center;'>News not found. Select news in the homepage.</p>
-						</div>
-					";
-				?>
-			<?php } ?>
-			
-			<?php if(isset($image_file_names) && $image_file_names != NULL) { ?>
+				<?php if(isset($image_file_names) && $image_file_names != NULL) { ?>
 					<div id="slider">
 				
 						<img class="scrollButtons left" src="<?php echo base_url(); ?>images/moving_box/leftarrow.png">
@@ -189,7 +179,31 @@
 						
 					</div> <!-- end slider -->
 			
+				<?php } // end php for slides ?>
+				
+				<!-- end of slide images -->
+				
+				<!-- facebook comment plugin below -->
+				
+				<?php
+					$comment_url = current_url() . "?id=" . $news_id;
+				?>
+				
+				<div class="fb_comment_plugin">
+					<div class="fb-comments" data-href="<?php echo $comment_url; ?>" data-width="693" data-numposts="100" data-colorscheme="light"></div>
+				</div>
+				
+			<?php } else { ?>
+				<?php 
+					echo "
+						<div>
+							<p style='text-align: center;'>News not found. Select news in the homepage.</p>
+						</div>
+					";
+				?>
 			<?php } ?>
+			
+			
 		
 		</div> <!--end read news-->
 		
