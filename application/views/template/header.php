@@ -6,6 +6,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title><?php if(isset($page_title) && $page_title != NULL) { echo $page_title; } else { echo "Welcome to Municipality of Janiuay"; } ?></title>
+	<!-- facebook meta below -->
+	<meta property="fb:app_id" content="{250289228474476}"/>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
 	<link rel="stylesheet" href="<?php echo base_url();?>styles/grid.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="<?php echo base_url();?>styles/style.css" type="text/css" media="screen"/>
