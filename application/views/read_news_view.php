@@ -13,6 +13,15 @@
 				?>
 				
 				<h3><?php echo $title; ?></h3>
+				
+				<?php 
+					$social_feature_url = current_url() . "?id=" . $news_id;
+				?>
+				
+				<div class="social_features">
+					<div class="fb-like" data-href="<?php echo $social_feature_url; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+				</div>
+				
 				<div class="content">
 					<?php echo $content; ?>
 				</div>

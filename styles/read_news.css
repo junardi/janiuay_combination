@@ -2,6 +2,10 @@
 	margin: 10px;
 }
 
+#content_area .read_news .social_features {
+	margin-top: 30px;
+}
+
 #content_area .read_news .fb_comment_plugin {
 	margin-top: 40px;
 }
