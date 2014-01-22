@@ -6,8 +6,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title><?php if(isset($page_title) && $page_title != NULL) { echo $page_title; } else { echo "Welcome to Municipality of Janiuay"; } ?></title>
-	<!-- facebook meta below -->
-	<meta property="fb:app_id" content="{250289228474476}"/>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
 	<link rel="stylesheet" href="<?php echo base_url();?>styles/grid.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="<?php echo base_url();?>styles/style.css" type="text/css" media="screen"/>
@@ -25,15 +23,20 @@
 	<!-- image popup design below -->
 	<link rel="stylesheet" href="<?php echo base_url();?>styles/image_popup.css" type="text/css" media="screen"/>
 	
+	<meta property="fb:app_id" content="250289228474476"/>
+	<meta property="og:url" content="http://surongjaniuay.com/"; />
+	<meta property="og:title" content="FB COMMENTS" />
+	
 </head>
 <body>
 	<!--set javascript for facebook comments below-->
+	
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
 	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=250289228474476";
 	fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 	
