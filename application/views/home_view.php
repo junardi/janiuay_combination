@@ -1,4 +1,4 @@
-	<div id="featured" class="grid_12">
+	<div id="featured" class="full_width grid_12">
 		<img src="<?php echo base_url(); ?>images/left_arrow.png" class="left_arrow arrows" alt="left arrow" />
 		<img src="<?php echo base_url(); ?>images/right_arrow.png" class="right_arrow arrows" alt="left arrow" />
 		<div class="grid_9 featured_image">

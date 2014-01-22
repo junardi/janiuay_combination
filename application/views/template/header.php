@@ -23,6 +23,9 @@
 	<!-- image popup design below -->
 	<link rel="stylesheet" href="<?php echo base_url();?>styles/image_popup.css" type="text/css" media="screen"/>
 	
+	<!-- full width design below -->
+	<link rel="stylesheet" href="<?php echo base_url();?>styles/full_width.css" type="text/css" media="screen"/>
+	
 	<meta property="fb:app_id" content="250289228474476"/>
 	<meta property="og:url" content="http://surongjaniuay.com/"; />
 	<meta property="og:title" content="FB COMMENTS" />
