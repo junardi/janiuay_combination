@@ -2,8 +2,12 @@
 	
 	<div id="content_area" class="grid_12">
 		<div class="grid_9 search">
-			<p>Search engine under construction. temporarily visit our <a href="<?php echo site_url(); ?>/home/site_map">Sitemap</a></p>
-			
+			<div id="search_area" class="grid_4 omega">
+				<form action="<?php echo site_url(); ?>/home/search" id="outside_search" method="post">
+					<input type="text" name="search" id="main_search" />
+					<input type="submit" value="Search" />
+				</form>
+			</div>
 		</div>
 		<div class="grid_3 omega login_area">
 			<?php $this->load->view('tools/login_area'); ?>

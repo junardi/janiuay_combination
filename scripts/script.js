@@ -713,7 +713,6 @@ var barangayModule = (function() {
 			}, "json");
 			return false;
 		});
-		
 	};
 	
 	var load_barangay = function() {

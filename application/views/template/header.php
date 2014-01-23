@@ -165,7 +165,7 @@
 		</div> <!-- end navigation -->
 		
 		<div id="branding" class="grid_12">
-			
+		
 			<img id="prosperity_image" src="<?php echo base_url(); ?>images/prosperity.png" alt="Prosperity image" />
 			
 			<div id="head_title" class="grid_8">
@@ -177,14 +177,27 @@
 					</div>
 				</div>
 			</div>
-			<div id="search_area" class="grid_4 omega">
-				<form action="<?php echo site_url(); ?>/home/search" id="outside_search" method="post">
-					<input type="text" name="search" id="search_something" />
-					<!--<input type="submit" value="Search" />-->
-					<!-- image submit -->
-					<a href="#"><img src="<?php echo base_url(); ?>images/button_search.gif" alt="Search Button" /></a>
-				</form>
-			</div>
+			
+			<?php 
+				$current_url = current_url();
+				$search_url = base_url() . "index.php/home/search";
+			?>
+			
+			<?php
+				if($current_url != $search_url) {
+			?>
+					<div id="search_area" class="grid_4 omega">
+						<form action="<?php echo site_url(); ?>/home/search" id="outside_search" method="post">
+							<input type="text" name="search" id="search_something" />
+							<!--<input type="submit" value="Search" />-->
+							<!-- image submit -->
+							<a href="#"><img src="<?php echo base_url(); ?>images/button_search.gif" alt="Search Button" /></a>
+						</form>
+					</div>
+			<?php
+				}
+			?>
+		
 		</div> <!--end branding-->
 		
 		<?php
@@ -192,4 +205,9 @@
 				echo $breadcrumbs;
 			}
 		?>
+		
+		
+		
+		
+		
 		
