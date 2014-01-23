@@ -272,7 +272,6 @@ abbr[title], acronym[title] {
 	left: 100%;
 }
 
-
 #breadcrumbs:nth-of-type(1), #breadcrumbs:nth-of-type(1):before, #breadcrumbs:nth-of-type(1):after { 
 	background: #FFF5C9; 
 }
@@ -560,7 +559,6 @@ abbr[title], acronym[title] {
 #write_ups .sidebar_staffs #hymn_staff #hymn {
 	width: 100%;
 	margin-top: 10px;
-	
 }
 
 #write_ups .sidebar_staffs #hymn_lyrics_staff {
@@ -577,19 +575,21 @@ abbr[title], acronym[title] {
 	margin-top: 15px;
 }
 
-
 /* below is the footer */
 
 #footer {
 	padding: 20px 0px;
 	text-align: center;
-	
+	color: #5C5C5C;
 } 
 
 #footer a {
 	color: #F85811;
 }
 
+#footer p {
+	margin-left: 30px;
+}
 
 /* content login below*/
 
@@ -598,7 +598,6 @@ abbr[title], acronym[title] {
 	background-color: #EDEFF0;
 	position: relative;
 	z-index: 20;
-	
 }
 
 #content_area .login_area  h3{

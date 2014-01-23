@@ -66,21 +66,22 @@
 	<div class="magic_nav_wrap">
 		<ul class="group" id="magic">
 			<li class="current_page_item">
-            	<a href="<?php echo current_url(); ?>">Janiuay Government</a>
-            </li>
+				<a href="<?php echo current_url(); ?>">Janiuay Government</a>
+			</li>
 			<li>
-            	<a target="_blank" href="http://iloilo.gov.ph">Iloilo Government</a>
-            </li>
+				<a target="_blank" href="http://iloilo.gov.ph">Iloilo Government</a>
+			</li>
 			<li>
-            	<a target="_blank" href="http://janiuay.wvsu.edu.ph">WVSU Janiuay</a>
-            </li>
-        </ul>
-    </div>
-	
+				<a target="_blank" href="http://janiuay.wvsu.edu.ph">WVSU Janiuay</a>
+			</li>
+		</ul>
+	</div>
+
 	<div class="container clearfix">
-		<div id="footer" class="grid_12">
-			<p>Copyright &copy; 2013.</p>
-			<p>All Rights Reserved <a href="<?php echo current_url(); ?>">surongjaniuay.com</a></p>
+		<div id="footer" class="full_width grid_12">
+			<p>Fax No. 531-8719</p>
+			<p>Landline No. 317 1014</p>
+			<p>Copyright &copy; 2014 <a href="<?php echo current_url(); ?>">surongjaniuay.com</a>. All Rights Reserved.</p>
 		</div>
 	</div> <!--end container clearfix-->
 	
