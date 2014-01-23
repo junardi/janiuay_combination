@@ -242,14 +242,61 @@ abbr[title], acronym[title] {
 
 /* Breadcrumbs below */
 
+#breadcrumbs {
+	margin-top: 40px;
+	background: #FFF5C9;
+	position: relative;
+	padding: 10px 0px;
+	border-top: 2px solid #FFCD2C;
+	border-bottom: 2px solid #FFCD2C;
+	border-right: 2px solid #FFCD2C;
+	border-left: 2px solid #FFCD2C;
+}
+
+#breadcrumbs:before, #breadcrumbs:after {
+	content: "";
+	background: #FFF5C9;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 9999px;
+	border-top: 2px solid #FFCD2C;
+	border-bottom: 2px solid #FFCD2C;
+}
+
+#breadcrumbs:before {
+	right: 100%;
+}
+
+#breadcrumbs:after {
+	left: 100%;
+}
+
+
+#breadcrumbs:nth-of-type(1), #breadcrumbs:nth-of-type(1):before, #breadcrumbs:nth-of-type(1):after { 
+	background: #FFF5C9; 
+}
+
+#breadcrumbs:nth-of-type(2), #breadcrumbs:nth-of-type(2):before, #breadcrumbs:nth-of-type(2):after { 
+	background: #FFF5C9; 
+}
+
+#breadcrumbs:nth-of-type(3), #breadcrumbs:nth-of-type(3):before, #breadcrumbs:nth-of-type(3):after { 
+	background: #FFF5C9; 
+}
+
+
+/* test full width of breadcrumbs */
+
 #breadcrumbs p {
 	font-size: 15px;
 	padding: 5px 0px;
 	text-align: center;
-	background-color: #E2E5E8;
+	/*background-color: #E2E5E8;*/
 	border-bottom: #ABADB3;
 	position: relative;
 	z-index: 20;
+	color: #5C5C5C;
 }
 
 #breadcrumbs a {

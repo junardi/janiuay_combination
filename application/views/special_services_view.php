@@ -84,7 +84,7 @@
 					</table>
 				</div>
 				<div id="tabs-6">
-					<p>Philippine Employment and Services Officer</p>
+					<p>Public Employment Service Office</p>
 				</div>
 				<div id="tabs-7">
 					<p>Solo Parents Federation</p>
