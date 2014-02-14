@@ -29,7 +29,7 @@
 	<meta property="fb:app_id" content="250289228474476"/>
 	<meta property="og:url" content="http://surongjaniuay.com/"; />
 	<meta property="og:title" content="FB COMMENTS" />
-	
+
 </head>
 <body>
 	<!--set javascript for facebook comments below-->
@@ -188,7 +188,7 @@
 			?>
 					<div id="search_area" class="grid_4 omega">
 						<form action="<?php echo site_url(); ?>/home/search" id="outside_search" method="post">
-							<input type="text" name="search" id="search_something" />
+							<input type="text" name="search_something" id="search_something" />
 							<!--<input type="submit" value="Search" />-->
 							<!-- image submit -->
 							<a href="#"><img src="<?php echo base_url(); ?>images/button_search.gif" alt="Search Button" /></a>

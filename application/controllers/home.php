@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 		parent::__construct();
 	
 		$this->load->model('page_tags_model');
-		$url = current_url();
+		$url = trim(current_url());
 		
 		$this->get_page_tags_by_url = $this->page_tags_model->get_page_tags_by_url($url);
 		
@@ -113,8 +113,8 @@ class Home extends CI_Controller {
 		}
 	
 	/* end right navigation  */
-	
-	/* homepage features below */ 
+	/* homepage features bel
+	ow */ 
 	
 		function news() {
 		
@@ -956,10 +956,11 @@ class Home extends CI_Controller {
 	
 		$page_tag_id = $this->input->post('page_tag_id');
 		$action = $this->input->post('action');
-		
+	
 		$page_tags_data = array(
 			"page_tags" => trim($this->input->post('page_tags')),
-			"url" => $this->input->post('url')
+			"page_description" => trim($this->input->post('page_description')),
+			"url" => trim($this->input->post('url'))
 		);
 		
 		$this->load->model('page_tags_model');
@@ -1009,7 +1010,12 @@ class Home extends CI_Controller {
 	}
 	
 	function search() {
+	
+		$this->load->model('search_model');
+		$this->load->library('search');
+		$this->load->helper('text');
 		
+		// page data below 
 		$data['page_title'] = "Search";
 		
 		$site_url = site_url();
@@ -1020,9 +1026,10 @@ class Home extends CI_Controller {
 				{$breadcrumb_link}
 			</div>
 		";
-		
+
 		$data['main_content'] = "search_view";
 		$this->load->view('template/content', $data);
+		
 	}
 	
 	// encryptions tests for security
@@ -1038,6 +1045,7 @@ class Home extends CI_Controller {
 		$this->load->view('template/content', $data);
 		
 	}
+	
 	
 } // end class 
 

@@ -1,8 +1,71 @@
 #content_area .search {
-	margin: 10px;
+	margin: 50px 0px 0px 0px;
 }
 
+#content_area .search #search_area #main_search {
+	border: none;
+	color: #5C5C5C;
+	background: url('../images/searchBox.png') no-repeat;
+	float: left;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	height: 36px;
+	line-height: 36px;
+	margin-right: 12px;
+	outline: medium none;
+	padding: 0 0 0 35px;
+	text-shadow: 1px 1px 0 white;
+	width: 385px;
+}
 
+#content_area .search #search_area {
+	width: 540px;
+	margin-left: 120px;
+}
+
+#content_area .search #search_area input[type='submit'] {
+	background: url('../images/buttons.png') no-repeat;
+	width: 83px;
+	height: 36px;
+	text-indent: -9999px;
+	overflow: hidden;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+}
+
+#content_area .search #search_area input[type='submit']:hover {
+	background-position: left bottom;
+}
+
+#content_area .search #search_results {
+	width: 650px;
+	margin: 40px auto 0px auto;
+	padding: 10px;
+	text-align: center;
+}
+
+#content_area .search #search_results div {
+	margin-top: 20px;
+	border-bottom: 1px solid #DEDEDE;
+	padding: 0px 20px 20px 20px;
+}
+
+#content_area .search #search_results div:last-child {
+	border-bottom: none;
+}
+
+#content_area .search #search_results div h1 {
+	font-size: 20px;
+}
+
+#content_area .search #search_results div p {
+	margin-top: 15px;
+}
+
+#content_area .search #search_results div p a {
+	color: #F95811;
+}
 
 
 

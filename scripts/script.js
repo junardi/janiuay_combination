@@ -1019,8 +1019,10 @@ navLinkModule.link_click();
 
 var searchModule = (function() {
 	
-	var $outside_search_form = $("#outside_search"); 
 	var $outside_search_link = $("#search_area form a");
+	var $outside_search_form = $("#outside_search"); 
+	var $inside_search_form = $("#inside_search");
+	var $search_results = $("#search_results");
 	
 	var search_input = function() {
 		
@@ -1052,9 +1054,17 @@ var searchModule = (function() {
 		});
 	};
 	
+	var search_inside = function() {
+		$inside_search_form.on('submit', function(){
+			$search_results.fadeOut().fadeIn();
+			return false;
+		});
+	};
+	
 	return {
 		search_input: search_input,
-		search_outside: search_outside
+		search_outside: search_outside,
+		search_inside: search_inside
 	}
 	
 })()
@@ -1063,6 +1073,7 @@ var searchModule = (function() {
 
 searchModule.search_input();
 searchModule.search_outside();
+//searchModule.search_inside();
 
 // Forgot Password Module Below 
 
@@ -1115,7 +1126,7 @@ forgotPasswordModule.input_focus();
 
 var tagsModule = (function() {
 	
-	page_tags_fom = $("#page_tags");
+	page_tags_fom = $(".page_tags");
 	
 	var add_page_tag = function() {
 		
@@ -1127,34 +1138,23 @@ var tagsModule = (function() {
 		});
 		
 		function add_page_tags() {
-			console.log("submitting");
+			$(".submit_button").val("Saving..");
+			$(".page_tags_status").fadeOut();
+			$("img.blue_loader").fadeIn();
 			return true;
 		}
 		
 		function add_page_tag_status(data) {
 			if(data.status) {
-				
-				$("#page_tags_status").fadeOut(function(){
-					$("#blue_loader").fadeIn(function(){
-						$(this).fadeOut(function(){
-							$("#page_tags_status").fadeIn().text("Tags saved").removeClass("error").addClass("success");
-						}); 
-					});
-				});
-				
+				$(".page_tags_status").fadeIn().text("Search data saved").removeClass("error").addClass("success");
+				$(".submit_button").val("Save");
+				$("img.blue_loader").fadeOut();
 			} else {
-				
-				$("#page_tags_status").fadeOut(function(){
-					$("#blue_loader").fadeIn(function(){
-						$(this).fadeOut(function(){
-							$("#page_tags_status").fadeIn().text("Tags not saved").removeClass("success").addClass("error");
-						}); 
-					});
-				});
-				
+				$(".page_tags_status").fadeIn().text("Search data not saved").removeClass("success").addClass("error");
+				$(".submit_button").val("Save");
+				$("img.blue_loader").fadeOut();
 			}
 		}
-	
 	};	
 	
 	return {

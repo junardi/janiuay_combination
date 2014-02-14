@@ -11,6 +11,7 @@
 						$tags_data = array(
 							"page_tag_id" => $row->page_tag_id,
 							"page_tags" => $row->page_tags,
+							"page_description" => $row->page_description,
 							"url" => $row->url
 						);
 					}
@@ -22,33 +23,37 @@
 		<?php if($this->session->userdata('role') == "admin") { ?>
 			
 			<?php if(isset($tags_data) && $tags_data != NULL) { ?>
-				<div id="tags_container" class="grid_12">
+				<div id="page_tags_container" class="grid_12">
 				
-					<div id="tags_data">
-						<h4>Page Tags</h4>
-						<form action="<?php echo site_url(); ?>/home/process_page_tags" method="post" id="page_tags">
-							<p><textarea name="page_tags" id="page_tags" cols="30" rows="10"><?php if(isset($tags_data)) { echo $tags_data['page_tags'];} ?></textarea></p>
+					<div class="tags_data">
+						<form action="<?php echo site_url(); ?>/home/process_page_tags" method="post" class="page_tags">
+							<h4>Page Tags</h4>
+							<p><textarea name="page_tags" id="page_tags_textarea" cols="30" rows="10"><?php if(isset($tags_data)) { echo $tags_data['page_tags'];} ?></textarea></p>
+							<h4>Page Description</h4>
+							<p><textarea name="page_description" id="page_description" cols="30" rows="10"><?php if(isset($tags_data)) { echo $tags_data['page_description'];} ?></textarea></p>
 							<input type="hidden" name="url" value="<?php echo current_url(); ?>" />
 							<input type="hidden" name="action" value="update" />
 							<input type="hidden" name="page_tag_id" value="<?php echo $tags_data['page_tag_id'] ?>" />
-							<p><input type="submit" value="Save Tags" /></p>
-							<p class="status"><img id='blue_loader' src="<?php echo base_url(); ?>images/blue_loader.gif" alt="Blue loading" /> <span id="page_tags_status" class="success">Page tags not saved.</span></p>
+							<p><input class="submit_button" type="submit" value="Save" /></p>
+							<p class="status"><img class='blue_loader' src="<?php echo base_url(); ?>images/blue_loader.gif" alt="Blue loading" /> <span class="success page_tags_status">Search tags not saved.</span></p>
 						</form>
 					</div>
 					
 				</div>
 				
 			<?php } else { ?>
-				<div id="tags_container" class="grid_12">
+				<div id="page_tags_container" class="grid_12">
 				
-					<div id="tags_data">
-						<h4>Page Tags</h4>
-						<form action="<?php echo site_url(); ?>/home/process_page_tags" method="post" id="page_tags">
-							<p><textarea name="page_tags" id="page_tags" cols="30" rows="10"></textarea></p>
+					<div class="tags_data">
+						<form action="<?php echo site_url(); ?>/home/process_page_tags" method="post" class="page_tags">
+							<h4>Page Tags</h4>
+							<p><textarea name="page_tags" id="page_tags_textarea" cols="30" rows="10"></textarea></p>
+							<h4>Page Description</h4>
+							<p><textarea name="page_description" id="page_description" cols="30" rows="10"></textarea></p>
 							<input type="hidden" name="url" value="<?php echo current_url(); ?>" />
 							<input type="hidden" name="action" value="add" />
-							<p><input type="submit" value="Save Tags" /></p>
-							<p class="status"><img id='blue_loader' src="<?php echo base_url(); ?>images/blue_loader.gif" alt="Blue loading" /> <span id="page_tags_status" class="success">Page tags not saved.</span></p>
+							<p><input class="submit_button" type="submit" value="Save Tags" /></p>
+							<p class="status"><img class='blue_loader' src="<?php echo base_url(); ?>images/blue_loader.gif" alt="Blue loading" /> <span class="success page_tags_status">Search tags not saved.</span></p>
 						</form>
 					</div>
 				
