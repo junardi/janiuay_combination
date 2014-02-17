@@ -3,6 +3,9 @@
 		<img src="<?php echo base_url(); ?>images/right_arrow.png" class="right_arrow arrows" alt="left arrow" />
 		<div class="grid_9 featured_image">
 			<div class="current">
+				<img src="<?php echo base_url(); ?>images/slideshow/caraudan_award.png" alt="Caraudan, Best in Sanitation" />
+			</div>
+			<div>
 				<img src="<?php echo base_url(); ?>images/slideshow/surong_niway.png" alt="Surong Janiuay Introduction" />
 			</div>
 			<div>
