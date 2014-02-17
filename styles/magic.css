@@ -1,8 +1,10 @@
 .magic_nav_wrap { 
 	margin: 0px auto; 
 	background-color: #001C4F;
-	border-top:    2px solid #5C5C5C; 
-	border-bottom: 2px solid #5C5C5C; 
+	/*border-top:    2px solid #5C5C5C; 
+	border-bottom: 2px solid #5C5C5C; */
+	border-top:    2px solid #7DA5D8; 
+	border-bottom: 2px solid #7DA5D8;
 }
 
 .magic_nav_wrap a {

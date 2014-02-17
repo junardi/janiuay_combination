@@ -1,12 +1,15 @@
 .full_width { 
-	background: #FFF5C9;
+	/*background: #FFF5C9;*/
 	padding: 3px 0px 0px 0px;
 	position: relative;
+	background: #BED8F3;
+
 }
 
 .full_width:before, .full_width:after {
 	content: "";
-	background: #FFF5C9;
+	/*background: #FFF5C9;*/
+	background: #BED8F3;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -15,22 +18,27 @@
 
 .full_width:before {
 	right: 100%;
+
 }
 
 .full_width:after {
 	left: 100%;
+
 }
 
 .full_width:nth-of-type(1), .full_width:nth-of-type(1):before, .full_width:nth-of-type(1):after { 
-	background: #FFF5C9; 
+	/*background: #FFF5C9;*/ 
+	background: #BED8F3;
 }
 
 .full_width:nth-of-type(2), .full_width:nth-of-type(2):before, .full_width:nth-of-type(2):after { 
-	background: #FFF5C9; 
+	/*background: #FFF5C9;*/ 
+	background: #BED8F3;
 }
 
 .full_width:nth-of-type(3), .full_width:nth-of-type(3):before, .full_width:nth-of-type(3):after { 
-	background: #FFF5C9; 
+	/*/background: #FFF5C9;*/ 
+	background: #BED8F3;
 }
 
 .left-only:after {
