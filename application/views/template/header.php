@@ -4,6 +4,8 @@
 <!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
 <head>
+	<meta name="description" content="Janiuay as a booming trading and agro industrial center in Central Iloilo with united, God loving, contented, and productive women and men in an equitable and globally competitive economy of healthy environment anchored on governance with strong political will and service oriented leadership">
+	<meta name="keywords" content="Surong Janiuay, Janiuay Government, Janiuay">
 	<meta charset="UTF-8">
 	<title><?php if(isset($page_title) && $page_title != NULL) { echo $page_title; } else { echo "Welcome to Municipality of Janiuay"; } ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
@@ -29,6 +31,16 @@
 	<meta property="fb:app_id" content="250289228474476"/>
 	<meta property="og:url" content="http://surongjaniuay.com/"; />
 	<meta property="og:title" content="FB COMMENTS" />
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-48152256-1', 'surongjaniuay.com');
+		ga('send', 'pageview');
+	</script>
 
 </head>
 <body>
@@ -172,7 +184,7 @@
 				<div> 
 					<img src="<?php echo base_url(); ?>images/logo.png" alt="Janiuay Logo" class="grid_2 omega" />
 					<div class="grid_6 omega tag_right">
-						<h2>JANIUAY</h2>
+						<h1>JANIUAY</h1>
 						<p>GOING TOWARD PROSPERITY</p>
 					</div>
 				</div>

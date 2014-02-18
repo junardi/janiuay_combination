@@ -74,6 +74,21 @@
 					</tr>
 				</table>
 			</div>
+			<div id="caraudan_award">
+				<h1>Caraudan Award</h1>
+				<table>
+					<tr>
+						<td><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (1).jpg" alt="Galley image" /></td>
+						<td><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (3).jpg" /></td>
+						<td><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (4).jpg" alt="Gallery image" /></td>
+					</tr>
+					<tr>
+						<td><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (5).jpg" alt="Galley image" /></td>
+						<td><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (6).jpg" /></td>
+						<td><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (7).jpg" alt="Gallery image" /></td>
+					</tr>
+				</table>
+			</div>
 		</div>
 		<div class="grid_3 omega login_area">
 			<?php $this->load->view('tools/login_area'); ?>

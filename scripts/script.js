@@ -698,7 +698,7 @@ var loginModule = (function() {
 
 // execute loginModuleBelow
 
-loginModule.inputs_focus();
+//loginModule.inputs_focus();
 loginModule.login_form_submit();
 
 // barangayModule below
@@ -1071,7 +1071,7 @@ var searchModule = (function() {
 
 // execute search module below
 
-searchModule.search_input();
+//searchModule.search_input();
 searchModule.search_outside();
 //searchModule.search_inside();
 
@@ -1166,6 +1166,49 @@ var tagsModule = (function() {
 // execute tags module below 
 
 tagsModule.add_page_tag();
+
+// featured album module below
+
+var featuredAlbumModule = (function() {
+	
+	var rotate = function() {
+
+		setInterval(start, 3000);
+		
+		function start() {
+		
+			var occur_photo = $("#featured_album #featured_album_image div.current");
+			
+			var next_photo = occur_photo.next();
+			
+			if(next_photo.length === 0) {
+				next_photo = $("#featured_album #featured_album_image div:first");
+			}
+		
+			occur_photo.removeClass('current').addClass('previous');
+			
+			next_photo.css({ opacity: 0.0 }).addClass('current').animate({ opacity: 1.0 }, 1000,
+			
+			function() {
+				occur_photo.removeClass('previous');
+			});
+		
+		}
+	};
+	
+	var auto_rotate = function() {
+		rotate();
+	}
+	
+	return {
+		auto_rotate: auto_rotate
+	}
+	
+})()
+
+// execute featured album module below 
+
+featuredAlbumModule.auto_rotate();
 
 
 

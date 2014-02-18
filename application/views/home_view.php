@@ -32,7 +32,7 @@
 			<h1><span style="">OUR MUNICIPALITY</span></h1>
 			<div id="intro">
 				<h2 class="top">Vision</h2>
-				<p class="top">Janiuay as a booming trading and agro industrial center in Central Iloilo with united, God loving, contented, and productive women and men in an equitable and globally competitive economy of healthy environment anchored on governance with strong political will and service oriented leadership</p>
+				<p class="top">Janiuay as a booming trading and agro industrial center in Central Iloilo with united, God-loving, contented, and productive women and men in an equitable and globally competitive economy of healthy environment anchored on governance with strong political will and service-oriented leadership</p>
 				<h2 class="top">Mission</h2>
 				<p class="top">We, at the Local Government Unit of Janiuay, abide by the Local Government Code to promote the general welfare of our people. We shall endeavour to be self-reliant and to ensure full and satisfying life of every man and woman within our territorial jurisdictions. We affirm our role to ensure and support the preservation and enrichment of culture, promote health and safety, enhance the right of the people to a balanced ecology, encourage and support the development of appropriate and self-reliant scientific and technological  capabilities, improve public morals, enhance economic prosperity and social justice, promote full employment among their residents, maintain peace and order, and preserve the comfort and convenience of their inhabitants.</p>
 			</div>
@@ -134,7 +134,7 @@
 			</div>
 			
 			<div id="hymn_staff">
-				<h1><span style="color: #F95811;">JANIUAY</span> HYMN</h1>
+				<h1><span style="color: #F95811;">Janiuay</span> Hymn</h1>
 				<audio id="hymn" controls preload="auto">
 					<source src="<?php echo base_url(); ?>audio/hymn.mp3" controls></source>
 					<source src="<?php echo base_url(); ?>audio/hymn.ogg" controls></source>
@@ -178,6 +178,31 @@
 			
 		</div> <!-- end sidebar_staffs-->
 		
+		<div id="featured_album" class="grid_3 omega">
+			<h1><span style="color: #F95811;">Featured</span> Album</h1>
+			<abbr title="View Album">
+				<div id="featured_album_image">
+					<div class="current">
+						<a href="<?php echo site_url(); ?>/home/photo_gallery?scroll_location=caraudan_award"><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (1).jpg" alt="featured album image" /></a>
+					</div>
+					<div>
+						<a href="<?php echo site_url(); ?>/home/photo_gallery?scroll_location=caraudan_award"><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (3).jpg" alt="featured album image" /></a>
+					</div>
+					<div>
+						<a href="<?php echo site_url(); ?>/home/photo_gallery?scroll_location=caraudan_award"><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (4).jpg" alt="featured album image" /></a>
+					</div>
+					<div>
+						<a href="<?php echo site_url(); ?>/home/photo_gallery?scroll_location=caraudan_award"><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (5).jpg" alt="featured album image" /></a>
+					</div>
+					<div>
+						<a href="<?php echo site_url(); ?>/home/photo_gallery?scroll_location=caraudan_award"><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (6).jpg" alt="featured album image" /></a>
+					</div>
+					<div>
+						<a href="<?php echo site_url(); ?>/home/photo_gallery?scroll_location=caraudan_award"><img src="<?php echo base_url(); ?>images/gallery/caraudan_award_album/caraudan (7).jpg" alt="featured album image" /></a>
+					</div>
+				</div>
+			</abbr>
+		</div>
 	
 	</div> <!--end write_ups-->
 	

@@ -250,7 +250,7 @@ abbr[title], acronym[title] {
 	margin-top: 20px;
 }
 
-#branding #head_title h2 {
+#branding #head_title h1 {
 	font-size: 40px;
 	font-weight: normal;
 }
@@ -367,12 +367,12 @@ abbr[title], acronym[title] {
 	background-color: #FFF5C9;
 	min-height: 251px;
 	position: relative;
+	margin-top: 30px;
 }
 
 #featured .featured_image {
 	position: relative;
 	z-index: 0;
-	
 }
 
 #featured .left_arrow {
@@ -410,10 +410,6 @@ abbr[title], acronym[title] {
 
 #featured .featured_image div.previous {
 	z-index: 1;
-}
-
-#featured .login_area {
-	
 }
 
 #featured .login_area  h3{
@@ -632,6 +628,51 @@ abbr[title], acronym[title] {
 
 #write_ups .sidebar_staffs #hymn_lyrics_staff p {
 	margin-top: 15px;
+}
+
+/* featured album below */
+
+#write_ups #featured_album {
+	margin-top: 25px;
+	position: relative;
+}
+
+#write_ups #featured_album h1 {
+	color: #5C5C5C;
+	text-align: center;
+	font-weight: bold;
+	background-color: #BED8F3;
+	padding: 10x;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#write_ups #featured_album #featured_album_image {
+	position: relative;
+	top: 10px;
+	z-index: 0;
+}
+
+#write_ups #featured_album #featured_album_image div {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#write_ups #featured_album #featured_album_image div.current {
+	z-index: 2;
+}
+
+#write_ups #featured_album #featured_album_image div.previous {
+	z-index: 1;
+}
+
+#write_ups #featured_album #featured_album_image img {
+	width: 219px;
+	height: 170px;
+	border: 8px solid #BED8F3;
+	cursor: pointer;
 }
 
 /* below is the footer */
