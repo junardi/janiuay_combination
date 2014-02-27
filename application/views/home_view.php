@@ -44,7 +44,7 @@
 						foreach($news_data as $row) {
 							$news_id = $row->news_id;
 							$title = $row->title;
-							$content = word_limiter($row->content, 20);
+							$content = character_limiter($row->content, 80);
 							$date_created = $row->date_created;
 						
 							$read_news_link = site_url() . "/home/read_news?id=" . $news_id;
@@ -85,7 +85,7 @@
 							
 							$article_id = $row->article_id;
 							$title = $row->title;
-							$content = word_limiter($row->content, 20);
+							$content = character_limiter($row->content, 80);
 							$date_created = $row->date_created;
 						
 							$read_article_link = site_url() . "/home/read_article?id=" . $article_id;
