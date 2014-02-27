@@ -496,6 +496,7 @@ abbr[title], acronym[title] {
 	border-radius: 10px;
 	margin-left: 20px;
 	padding-bottom: 10px;
+	min-height: 545px;
 }
 
 #write_ups  .main_write_ups .topics h2 {
